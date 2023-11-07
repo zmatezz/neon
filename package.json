@@ -1,0 +1,12 @@
+{
+  "name": "neon",
+  "version": "1.0.0",
+  "description": "Projeto desenvolvido durante desafio do curso codeboost.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tailwindcss -i ./src/assets/css/style.css -o ./dist/style.css --watch",
+    "build": "tailwindcss build ./src/assets/css/style.css -o ./dist/style.css"
+  },
+  "author": "zmatezz",
+  "license": "ISC"
+}
