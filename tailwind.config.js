@@ -10,7 +10,7 @@ module.exports = {
 
       backgroundImage: {
         hero: "url('/src/assets/img/bg-hero.svg')",
-
+        point: "url('/src/assets/img/points.svg')",
         slider:
           "url('https://res.cloudinary.com/dgeeyohmv/image/upload/v1693963847/fuvme37nrpeqcsnbsnnc.jpg')",
       },
@@ -33,6 +33,10 @@ module.exports = {
         "brand-grey-6": "#33303E",
         "f-gradient-blue": "#35cbe266",
         "t-gradient-blue": "#35cae200",
+      },
+
+      content: {
+        point: 'url("/src/assets/img/points.svg")',
       },
     },
   },
