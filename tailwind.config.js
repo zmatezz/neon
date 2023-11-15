@@ -9,7 +9,8 @@ module.exports = {
       },
 
       backgroundImage: {
-        hero: "url('https://res.cloudinary.com/dgeeyohmv/image/upload/v1693963744/fs6fghc2bzwoltyxetnb.jpg')",
+        hero: "url('/src/assets/img/bg-hero.svg')",
+
         slider:
           "url('https://res.cloudinary.com/dgeeyohmv/image/upload/v1693963847/fuvme37nrpeqcsnbsnnc.jpg')",
       },
@@ -30,6 +31,8 @@ module.exports = {
         "brand-grey-4": "#5F5C6B",
         "brand-grey-5": "#4E4B59",
         "brand-grey-6": "#33303E",
+        "f-gradient-blue": "#35cbe266",
+        "t-gradient-blue": "#35cae200",
       },
     },
   },
