@@ -41,3 +41,16 @@ button {
   padding: 0 15px;
   margin: 0 auto;
 }
+
+.swiper-pagination-bullet {
+  background: #ffc800;
+  opacity: 0.3;
+  border-radius: 12px;
+  gap: 4px;
+  transition: all 0.3s;
+
+  &.swiper-pagination-bullet-active {
+    opacity: 1;
+    width: 17px;
+  }
+}
