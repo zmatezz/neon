@@ -18,14 +18,14 @@
   </head>
   <body>
     <header
-      class="absolute top-0 left-0 w-full h-[8.8rem] flex border border-solid border-white/[020%]"
+      class="absolute top-0 left-0 w-full h-[77px] md:h-[8.8rem] flex border border-solid border-white/[020%] bg-brand-blue"
     >
       <div class="container flex flex-row items-center justify-between">
-        <a href="" class="logo">
+        <a class="max-w-[108px] md:max-w-full" href="">
           <img src="./src/assets/img/logo.svg" alt="" />
         </a>
         <nav class="flex items-center">
-          <ul class="flex items-center gap-12 mr-[60px]">
+          <ul class="items-center gap-12 mr-[60px] hidden lg:flex">
             <li>
               <a
                 class="font-poppins font-medium text-[1.6rem] text-white hover:text-brand-yellow transition-colors duration-300 leading-[125%]"
@@ -68,15 +68,18 @@
             </li>
           </ul>
           <button
-            class="inline-block leading-[4.8rem] bg-transparent hover:bg-white border-[1px] border-solid border-white transition-all duration-300 px-[2.6rem] rounded-[122px] font-Poppins font-semibold text-2xl text-white hover:text-brand-green-light"
+            class="leading-[4.8rem] bg-transparent hover:bg-white border-[1px] border-solid border-white transition-all duration-300 px-[2.6rem] rounded-[122px] font-Poppins font-semibold text-2xl text-white hover:text-brand-green-light hidden md:inline-block"
           >
             Abra sua conta digital
+          </button>
+          <button class="block lg:hidden ml-10">
+            <img src="/src/assets/img/btn-mobile.svg" alt="" />
           </button>
         </nav>
       </div>
     </header>
 
-    <section
+    <!--  <section
       class="bg-hero w-full h-[786px] bg-no-repeat bg-center bg-cover pt-[175px]"
     >
       <div class="container flex items-start justify-between">
@@ -765,7 +768,7 @@
           </p>
         </div>
       </div>
-    </footer>
+    </footer> -->
     <!-- <h1
       
     >
