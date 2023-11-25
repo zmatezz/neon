@@ -21,7 +21,7 @@
       class="absolute top-0 left-0 w-full h-[77px] md:h-[88px] flex justify-center border border-solid border-white/[020%]"
     >
       <div
-        class="container px-5 flex flex-row items-center justify-between xl:justify-around"
+        class="container px-5 flex flex-row items-center justify-between md:justify-around"
       >
         <a class="max-w-[108px] md:max-w-full" href="">
           <img src="./src/assets/img/logo.svg" alt="" />
@@ -174,28 +174,30 @@
       </div>
     </section>
 
-    <section class="pt-[86px] md:pt-[153px] xl:pt-32">
+    <section class="pt-[86px] md:pt-[153px] xl:pt-[129px]">
       <div
-        class="container mx-auto px-5 flex flex-col-reverse inver items-start justify-between"
+        class="container mx-auto px-5 flex flex-col-reverse xl:flex-row items-start md:items-center xl:items-start justify-between md:justify-center"
       >
         <div
-          class="w-full md:mx-auto flex flex-col-reverse md:flex-row items-center justify-center md:pt-[93px] md:max-w-[606px] xl:max-w-[277px]"
+          class="w-full md:mx-auto flex flex-col-reverse md:flex-row xl:flex-col items-center justify-center md:pt-[93px] xl:pt-0 md:max-w-[606px] xl:max-w-[277px]"
         >
           <div
-            class="w-full max-w-[218px] md:max-w-[255px] md:h-[541px] relative pt-10 mb-44 md:pt-0 md:mb-0"
+            class="w-full max-w-[218px] md:max-w-[255px] xl:max-w-[277px] md:h-[541px] xl:h-[564px] relative pt-10 md:pt-0 mb-44 md:mb-0"
           >
             <img
-              class="absolute hidden -z-10 -left-[214px] top-[88px] max-w-[377px]"
+              class="absolute hidden xl:flex -z-10 -left-[214px] top-[88px] max-w-[377px]"
               src="./src/assets/img/circle-mockup.svg"
               alt=""
             />
             <img
-              class="drop-shadow-2xl"
+              class="drop-shadow-2xl xl:h-full"
               src="./src/assets/img/mockup.svg"
               alt=""
             />
           </div>
-          <div class="w-full flex flex-col items-center pt-[117px] md:pt-0">
+          <div
+            class="w-full flex flex-col items-center pt-[117px] md:pt-0 xl:pt-[129px]"
+          >
             <div
               class="xl:before:content-point xl:before:absolute xl:before:w-1 xl:before:h-20 xl:before:-top-[104px] xl:before:left-[50%] xl:before:-ml-1 relative"
             >
@@ -203,18 +205,18 @@
             </div>
             <div class="flex flex-col items-center">
               <h3
-                class="font-Poppins text-brand-grey-6 font-semibold text-2xl xl:text-4xl leading-[150%] -tracking-[0.5px] mt-[14px] md:mt-[31px] xl:mt-9"
+                class="font-Poppins text-brand-grey-6 font-semibold text-2xl leading-[150%] -tracking-[0.5px] mt-[14px] md:mt-[31px] xl:mt-9"
               >
                 Baixe nosso app
               </h3>
               <p
-                class="text-lg xl:text-2xl text-brand-grey-4 opacity-70 mb-11 xl:mb-6 leading-[150%] text-center max-w-[270px]"
+                class="text-lg xl:text-base text-brand-grey-4 opacity-70 mb-11 xl:mb-6 leading-[150%] text-center max-w-[270px]"
               >
                 Que tal abrir uma conta digital para ver como a gente faz a sua
                 vida muito mais simples?
               </p>
               <ul>
-                <li class="mb-4 xl:mb-6">
+                <li class="mb-4 xl:mb-3">
                   <a href="" target="_blank">
                     <img src="./src/assets/img/apple-store.svg" alt="" />
                   </a>
@@ -228,27 +230,29 @@
             </div>
           </div>
         </div>
-        <div class="w-full max-w-[800px]">
-          <div class="mb-[34px] md:mb-[57px] flex flex-col items-center">
+        <div class="w-full max-w-[800px] xl:items-start justify-start">
+          <div
+            class="mb-[34px] md:mb-[57px] xl:mb-[144px] flex flex-col items-center xl:items-start"
+          >
             <h2
-              class="font-Poppins text-brand-grey-6 -tracking-[1px] leading-[112%] font-semibold text-[28px] md:text-4xl text-center max-w-[317px] md:max-w-[424px] xl:max-w-[488px] mb-[37px] md:mb-[53px] xl:mb-12"
+              class="font-Poppins text-brand-grey-6 -tracking-[1px] leading-[112%] font-semibold text-[28px] md:text-4xl xl:text-[40px] text-center xl:text-start max-w-[317px] md:max-w-[424px] xl:max-w-[488px] mb-[37px] md:mb-[53px] xl:mb-12"
             >
               Resolva sua vida direto pelo app Neon!
             </h2>
             <ul class="mb-10 xl:mb-9">
               <li
-                class="flex items-center justify-between border-t-0 border-r-0 border-l-0 border-solid border-b border-[#e1e0e7]/90 w-full pb-[10px] xl:pb-8"
+                class="flex items-center justify-between border-t-0 border-r-0 border-l-0 border-solid border-b border-[#e1e0e7]/90 w-full pb-[10px] xl:pb-[29px]"
               >
-                <div class="flex items-start xl:items-center xl:justify-center">
+                <div class="flex items-start">
                   <img src="./src/assets/img/icon-cartao-credito.svg" alt="" />
                   <div class="ml-6 md:ml-[30px] xl:ml-11">
                     <h3
-                      class="font-Poppins text-brand-grey-4 font-semibold text-xl md:text-2xl xl:text-4xl xl:leading-[150%] -tracking-[0.5px] max-w-[191px] md:max-w-[382px]"
+                      class="font-Poppins text-brand-grey-4 font-semibold text-xl md:text-2xl xl:leading-[150%] -tracking-[0.5px] max-w-[191px] md:max-w-[382px]"
                     >
                       Cartão de crédito sem anuidade
                     </h3>
                     <p
-                      class="leading-[150%] text-[#7A7786] text-sm md:text-lg xl:text-3xl max-w-[227px] md:max-w-[550px]"
+                      class="leading-[150%] text-[#7A7786] text-sm md:text-lg max-w-[227px] md:max-w-[550px] xl:max-w-[593px]"
                     >
                       Conta digital com cartão de crédito sem anuidade e sem
                       complicação
@@ -260,16 +264,16 @@
               <li
                 class="flex items-center justify-between border-t-0 border-r-0 border-l-0 border-solid border-b border-[#e1e0e7]/90 w-full py-7"
               >
-                <div class="flex items-center">
+                <div class="flex items-start">
                   <img src="./src/assets/img/icon-taxas.svg" alt="" />
                   <div class="ml-6 md:ml-[30px] xl:ml-11">
                     <h3
-                      class="font-Poppins text-brand-grey-4 font-semibold text-xl md:text-2xl xl:text-4xl xl:leading-[150%] -tracking-[0.5px] max-w-[191px] md:max-w-[382px]"
+                      class="font-Poppins text-brand-grey-4 font-semibold text-xl md:text-2xl xl:leading-[150%] -tracking-[0.5px] max-w-[191px] md:max-w-[382px]"
                     >
                       Sem taxas
                     </h3>
                     <p
-                      class="leading-[150%] text-[#7A7786] text-sm md:text-lg xl:text-3xl max-w-[227px] md:max-w-[494px]"
+                      class="leading-[150%] text-[#7A7786] text-sm md:text-lg max-w-[227px] md:max-w-[494px] xl:max-w-[537px]"
                     >
                       Transferências, boletos de depósito e outros serviços
                       gratuitos
@@ -281,16 +285,16 @@
               <li
                 class="flex items-center justify-between border-t-0 border-r-0 border-l-0 border-solid border-b border-[#e1e0e7]/90 w-full py-[37px]"
               >
-                <div class="flex items-center">
+                <div class="flex items-start">
                   <img src="./src/assets/img/icon-investimentos.svg" alt="" />
                   <div class="ml-6 md:ml-[30px] xl:ml-11">
                     <h3
-                      class="font-Poppins text-brand-grey-4 font-semibold text-xl md:text-2xl xl:text-4xl xl:leading-[150%] -tracking-[0.5px] max-w-[191px] md:max-w-[382px]"
+                      class="font-Poppins text-brand-grey-4 font-semibold text-xl md:text-2xl xl:leading-[150%] -tracking-[0.5px] max-w-[191px] md:max-w-[382px]"
                     >
                       Mais investimentos
                     </h3>
                     <p
-                      class="leading-[150%] text-[#7A7786] text-sm md:text-lg xl:text-3xl max-w-[227px] md:max-w-[479px]"
+                      class="leading-[150%] text-[#7A7786] text-sm md:text-lg max-w-[227px] md:max-w-[479px] xl:max-w-[513px]"
                     >
                       Rendem mais que a poupança e você resgata quando quiser
                     </p>
@@ -306,23 +310,23 @@
             >
           </div>
           <div
-            class="h-[470px] md:h-[352px] w-[336px] md:w-[688px] mx-auto xl:h-[410px] bg-[url('/src/assets/img/bg-box-card-neon.svg')] bg-no-repeat bg-bottom md:bg-center bg-cover rounded-xl flex flex-col md:flex-row items-center xl:justify-between md:pl-[50px] xl:pl-[59px] relative"
+            class="h-[470px] md:h-[352px] xl:h-[410px] max-w-[336px] md:max-w-[688px] xl:max-w-[800px] mx-auto bg-[url('/src/assets/img/bg-box-card-neon.svg')] bg-no-repeat bg-bottom md:bg-center bg-cover rounded-xl flex flex-col md:flex-row items-center xl:justify-between md:pl-[50px] xl:pl-[59px] xl:ml-0 relative"
           >
             <div
               class="w-full max-w-[380px] md:max-w-[326px] flex flex-col items-center"
             >
               <h2
-                class="font-Poppins text-white -tracking-[1px] leading-[112%] font-bold text-[28px] md:text-[32px] text-center md:text-start pt-[43px] md:pt-0 mb-3 md:w-full"
+                class="font-Poppins text-white -tracking-[1px] leading-[112%] font-bold text-[28px] md:text-[32px] xl:text-[40px] text-center md:text-start pt-[43px] md:pt-0 mb-3 md:w-full"
               >
                 Neon Pejota
               </h2>
               <h3
-                class="font-Poppins text-white font-semibold text-xl md:text-2xl xl:text-4xl leading-[150%] -tracking-[0.5px] max-w-[281px] md:max-w-[326px] xl:max-w-[300px] mb-2 text-center md:text-start"
+                class="font-Poppins text-white font-semibold text-xl md:text-2xl leading-[150%] -tracking-[0.5px] max-w-[281px] md:max-w-[326px] mb-2 text-center md:text-start"
               >
                 Contas digitais PJ gratuitas para decolar seu negócio!
               </h3>
               <p
-                class="leading-[150%] text-white text-base text-center md:text-start xl:text-2xl mb-8 md:mb-0 max-w-[253px] md:max-w-[311px]"
+                class="leading-[150%] text-white text-base text-center md:text-start mb-8 md:mb-0 xl:mb-4 max-w-[253px] md:max-w-[311px] xl:max-w-[327px]"
               >
                 As melhores contas para fazer pagamentos, compras e receber dos
                 seus clientes.
@@ -341,7 +345,7 @@
               </div>
             </div>
             <img
-              class="md:absolute mt-[34px] md:mt-0 max-w-[277px] md:max-w-[293px] md:-right-[26px] xl:-mr-[31px]"
+              class="md:absolute mt-[34px] md:mt-0 max-w-[277px] md:max-w-[293px] xl:max-w-[341px] md:-right-[26px] xl:-right-[31px]"
               src="/src/assets/img/card-front-pj.svg"
               alt=""
             />
