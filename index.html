@@ -355,7 +355,7 @@
     </section>
 
     <section class="pt-20 md:pt-[109px] xl:pt-[134px]">
-      <div class="container p-0 max-w-[1214px] mx-auto max-md:max-w-full">
+      <div class="container p-0 max-md:max-w-full max-w-[1214px] mx-auto">
         <div
           class="mb-9 md:mb-14 flex flex-col items-center justify-center xl:items-end xl:justify-between relative w-full"
         >
@@ -467,20 +467,24 @@
         </div>
       </div>
     </section>
-    <!--
-    <section class="pt-[127px] pb-[85px]">
-      <div class="container px-5 flex items-center">
-        <div class="max-w-[542px]">
+
+    <section class="pt-[57px] pb-[85px] xl:pt-[127px]">
+      <div
+        class="container mx-auto max-md:max-w-full max-w-[1214px] px-5 flex flex-col xl:flex-row items-center xl:items-start"
+      >
+        <div class="max-w-[542px] md:max-w-[630px] flex flex-col">
           <h2
-            class="font-Poppins text-brand-grey-2 -tracking-[1px] leading-[112%] font-bold text-[4rem] mb-[61px] w-full"
+            class="font-Poppins text-brand-grey-2 -tracking-[1px] leading-[112%] font-bold text-2xl xl:text-[40px] text-center xl:text-start mb-10 xl:mb-[45px] w-full"
           >
             Aproveite<span
-              class="block font-Poppins text-brand-grey-6 -tracking-[1px] leading-[112%] font-bold text-[4rem] mt-2"
+              class="block font-Poppins text-brand-grey-6 -tracking-[1px] leading-[112%] font-bold text-[28px] xl:text-[40px] mt-2 text-center xl:text-start max-w-[356px] md:max-w-[489px] xl:max-w-[542px] max-xl:mx-auto"
               >Domine o seu dinheiro com uma conta 100% digital</span
             >
           </h2>
-          <ul class="mb-[61px]">
-            <li class="flex items-center gap-10 mb-6">
+          <ul class="">
+            <li
+              class="flex flex-col md:flex-row items-center xl:items-start gap-4 xl:gap-6 mb-6 xl:mb-11"
+            >
               <div
                 class="w-[45px] h-[45px] bg-brand-green-light rounded-lg flex items-center justify-center"
               >
@@ -489,81 +493,103 @@
                   alt=""
                 />
               </div>
-              <div>
+              <div
+                class="flex flex-col items-center md:items-start justify-center"
+              >
                 <h4
-                  class="font-Poppins text-brand-grey-4 font-medium text-[20px] leading-[112%] -tracking-[0.5px]"
+                  class="font-Poppins text-brand-grey-4 font-semibold text-xl md:text-2xl leading-[112%] -tracking-[0.5px] text-center md:text-left"
                 >
                   Cartão visa internacional
                 </h4>
-                <p class="text-[18px] leading-[150%] text-brand-grey-3">
+                <p
+                  class="text-sm md:text-lg leading-[150%] text-brand-grey-3 w-[220px] xl:w-[433px] md:w-full text-center md:text-left"
+                >
                   Tenha facilidades e benefícios para o seu dia a dia.
                 </p>
               </div>
             </li>
-            <li class="flex items-center gap-10 mb-6">
+            <li
+              class="flex flex-col md:flex-row items-center xl:items-start gap-4 xl:gap-6 mb-6 xl:mb-11"
+            >
               <div
                 class="w-[45px] h-[45px] bg-brand-green-light rounded-lg flex items-center justify-center"
               >
                 <img src="/src/assets/img/icon-taxa-zero.svg" alt="" />
               </div>
-              <div>
+              <div
+                class="flex flex-col items-center md:items-start justify-center"
+              >
                 <h4
-                  class="font-Poppins text-brand-grey-4 font-medium text-[20px] leading-[112%] -tracking-[0.5px]"
+                  class="font-Poppins text-brand-grey-4 font-semibold text-xl md:text-2xl leading-[112%] -tracking-[0.5px] text-center md:text-start"
                 >
                   Zero mensalidade e anuidade
                 </h4>
-                <p class="text-[18px] leading-[150%] text-brand-grey-3">
+                <p
+                  class="text-sm md:text-lg leading-[150%] text-brand-grey-3 w-[220px] md:w-full text-center md:text-left"
+                >
                   Não gaste grana pagando taxas desnecessárias.
                 </p>
               </div>
             </li>
-            <li class="flex items-center gap-10">
+            <li
+              class="flex flex-col md:flex-row items-center xl:items-start gap-4 xl:gap-6 mb-6 xl:mb-[49px]"
+            >
               <div
                 class="w-[45px] h-[45px] bg-brand-green-light rounded-lg flex items-center justify-center"
               >
                 <img src="/src/assets/img/icon-poupanca.svg" alt="" />
               </div>
-              <div>
+              <div
+                class="flex flex-col items-center md:items-start justify-center"
+              >
                 <h4
-                  class="font-Poppins text-brand-grey-4 font-medium text-[20px] leading-[112%] -tracking-[0.5px]"
+                  class="font-Poppins text-brand-grey-4 font-semibold text-xl md:text-2xl leading-[112%] -tracking-[0.5px] text-center md:text-left"
                 >
                   Investimento que rende mais que a poupança
                 </h4>
-                <p class="text-[18px] leading-[150%] text-brand-grey-3">
+                <p
+                  class="text-sm md:text-lg leading-[150%] text-brand-grey-3 w-[220px] md:w-full text-center md:text-left"
+                >
                   Invista o seu dinheiro de maneira mais rentável.
                 </p>
               </div>
             </li>
           </ul>
           <button
-            class="inline-block leading-[4.8rem] bg-brand-yellow hover:bg-[#FFDC5C] transition-all duration-300 px-[2.6rem] rounded-[122px] font-Poppins font-semibold text-2xl text-[#855B35]"
+            class="inline-block bg-brand-yellow hover:bg-[#FFDC5C] transition-all duration-300 rounded-[122px] py-4 font-Poppins font-semibold text-base text-[#855B35] w-[237px] max-xl:mx-auto"
           >
             Abra sua conta digital
           </button>
         </div>
         <div
-          class="relative w-full max-w-[712px] h-[598px] -mr-[38px] left-[125px]"
+          class="relative mt-11 md:mt-[133px] xl:mt-0 w-full h-[411px] max-w-[357px] md:max-w-[582px] xl:max-w-[671px] max-h-[411px] xl:h-[598px] xl:left-[118px]"
         >
           <img
-            class="absolute bottom-[47px] left-0"
+            class="absolute w-[168px] md:w-[225px] h-[352px] md:h-[478px] top-[57px] md:top-[25px] xl:top-[70px] -left-[10px] md:left-[52px] xl:-left-[60px] z-10"
             src="/src/assets/img/mockup-01.svg"
             alt=""
           />
           <img
-            class="absolute top-1 left-[258px]"
+            class="absolute w-[168px] md:w-[225px] h-[357px] md:h-[478px] top-0 md:-top-[51px] xl:-top-0 -right-[10px] md:right-[51px] xl:right-[253px] z-10"
             src="/src/assets/img/mockup-02.png"
             alt=""
           />
           <img
-            class="absolute right-0 bottom-0"
+            class="invisible xl:visible absolute w-[323px] md:w-[582px] xl:w-[510px] top-[146px] md:top-0 xl:right-0 xl:top-[123px]"
             src="/src/assets/img/circle-conta-digital.svg"
+            alt=""
+          />
+          <img
+            class="absolute xl:invisible w-[323px] md:w-[582px] xl:w-[510px] top-[146px] md:top-0 xl:right-0"
+            src="/src/assets/img/circle-conta-digital-mobile.svg"
             alt=""
           />
         </div>
       </div>
     </section>
+
     <footer class="bg-brand-blue pt-12">
-      <div class="container px-5">
+      <div class="container mx-auto px-5">
         <div
           class="flex justify-between pb-12 mb-14 border-solid border-2 border-[#49C5FD]/20 border-r-0 border-t-0 border-l-0"
         >
@@ -789,81 +815,10 @@
           </p>
         </div>
       </div>
-    </footer> -->
-    <!-- <h1
-      
-    >
-      Heading h1
-    </h1>
-    <h2
-      class="font-Poppins text-brand-grey-5 -tracking-[1px] leading-[112%] font-bold text-[4rem]"
-    >
-      Heading h2
-    </h2>
-    <h3
-     
-    >
-      Heading h3
-    </h3>
-    <h4
-      class="font-Poppins text-brand-grey-5 font-medium text-2xl leading-[112%] -tracking-[0.5px]"
-    >
-      Heading h4
-    </h4> -->
-    <!-- <div>
-      <div
-        class="w-full max-w-[38.4rem] h-[20.9rem] bg-brand-grey-1/[55%] rounded-lg pt-[3.7rem] pr-[3.2rem] pb-[2.3rem] pl-[3.2rem]"
-      >
-        <div class="flex items-center justify-between mb-[2.1rem]">
-          <strong
-            class="font-Poppins text-brand-grey-5 font-semibold text-[1.8rem] leading-[112%] -tracking-[1px]"
-            >@matheusguedes</strong
-          >
-          <img src="./src/assets/img/icon-twiiter.svg" alt="" />
-        </div>
-        <p class="font-Inter text-[1.8rem] leading-[150%] text-brand-grey-4">
-          Valeu @banconeon! Gostei muito da embalagem e o cartão é brabo!
-          #bancoNeon
-        </p>
-      </div>
+    </footer>
 
-      
-      <button
-        class="inline-block leading-[4.8rem] bg-white hover:bg-brand-light-blue border-[1px] border-solid border-brand-light-blue transition-all duration-300 px-[2.6rem] rounded-[122px] font-Poppins font-semibold text-2xl text-brand-light-blue hover:text-white"
-      >
-        Abra sua conta digital
-      </button>
-      
-    </div> -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-    <script>
-      var swiper = new Swiper(".depoimentos", {
-        slidesPerView: 3,
-        spaceBetween: 32,
-        pagination: {
-          el: ".paginator-depoimentos",
-          clickable: true,
-        },
-        autoplay: {
-          delay: 5000,
-          disableOnInteraction: false,
-        },
-        breakpoints: {
-          100: {
-            slidesPerView: 1.3,
-            spaceBetween: 16,
-          },
-          768: {
-            slidesPerView: 1.9,
-            spaceBetween: 15,
-          },
-          1280: {
-            slidesPerView: 3,
-            spaceBetween: 32,
-          },
-        },
-      });
-    </script>
+    <script src="./src/assets/js/index.js"></script>
   </body>
 </html>

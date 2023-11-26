@@ -16,21 +16,6 @@
   font-family: "Inter", sans-serif;
 }
 
-img {
-  max-width: 100%;
-  display: block;
-}
-
-html,
-body {
-  overflow-x: hidden;
-}
-
-button {
-  background-color: transparent;
-  cursor: pointer;
-}
-
 .swiper-pagination-bullet {
   background: #ffc800;
   opacity: 0.3;
