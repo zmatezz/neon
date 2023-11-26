@@ -24,3 +24,8 @@ var swiper = new Swiper(".depoimentos", {
     },
   },
 });
+
+AOS.init({
+  duration: 1000,
+  once: true,
+});
