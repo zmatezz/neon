@@ -1,954 +1,654 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/png" href="./src/assets/img/favicon.png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link rel="stylesheet" href="./dist/style.css" />
 
-    <title>Redesign - Banco Neon</title>
-    <meta name="title" content="Redesign -  Banco Neon" />
-    <meta
-      name="description"
-      content="Confira o redesign do site do Banco Neon, um projeto de estudo realizado durante o curso do CodeBoost. Explore as melhorias de design e navegação implementadas para aprimorar a experiência do usuário."
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="./src/assets/img/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./dist/style.css" />
 
-    <meta property="og:type" content="website" />
-    <meta
-      property="og:url"
-      content="https://lp-neon-olive.vercel.app/src/assets/img/share-img.jpg"
-    />
-    <meta property="og:title" content="Redesign -  Banco Neon" />
-    <meta
-      property="og:description"
-      content="Confira o redesign do site do Banco Neon, um projeto de estudo realizado durante o curso do CodeBoost. Explore as melhorias de design e navegação implementadas para aprimorar a experiência do usuário."
-    />
-    <meta
-      property="og:image"
-      content="https://lp-neon-olive.vercel.app/src/assets/img/share-img.jpg"
-    />
+  <title>Redesign - Banco Neon</title>
+  <meta name="title" content="Redesign -  Banco Neon" />
+  <meta name="description"
+    content="Confira o redesign do site do Banco Neon, um projeto de estudo realizado durante o curso do CodeBoost. Explore as melhorias de design e navegação implementadas para aprimorar a experiência do usuário." />
 
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta
-      property="twitter:url"
-      content="https://lp-neon-olive.vercel.app/src/assets/img/share-img.jpg"
-    />
-    <meta property="twitter:title" content="Redesign -  Banco Neon" />
-    <meta
-      property="twitter:description"
-      content="Confira o redesign do site do Banco Neon, um projeto de estudo realizado durante o curso do CodeBoost. Explore as melhorias de design e navegação implementadas para aprimorar a experiência do usuário."
-    />
-    <meta
-      property="twitter:image"
-      content="https://lp-neon-olive.vercel.app/src/assets/img/share-img.jpg"
-    />
-  </head>
-  <body>
-    <header
-      class="absolute top-0 left-0 w-full h-[77px] md:h-[88px] flex justify-center border border-solid border-white/[020%]"
-    >
-      <div
-        class="container px-5 flex flex-row items-center justify-between md:justify-around"
-      >
-        <a class="max-w-[108px] md:max-w-full" href="">
-          <img src="./src/assets/img/logo.svg" alt="" />
-        </a>
-        <nav class="flex items-center">
-          <ul class="items-center xl:gap-12 xl:mr-[60px] hidden xl:flex">
-            <li>
-              <a
-                class="font-poppins font-medium text-base text-white hover:text-brand-yellow transition-colors duration-300 leading-[125%]"
-                href=""
-                >Produtos Neon</a
-              >
-            </li>
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://lp-neon-olive.vercel.app/src/assets/img/share-img.jpg" />
+  <meta property="og:title" content="Redesign -  Banco Neon" />
+  <meta property="og:description"
+    content="Confira o redesign do site do Banco Neon, um projeto de estudo realizado durante o curso do CodeBoost. Explore as melhorias de design e navegação implementadas para aprimorar a experiência do usuário." />
+  <meta property="og:image" content="https://lp-neon-olive.vercel.app/src/assets/img/share-img.jpg" />
 
-            <li>
-              <a
-                class="font-poppins font-medium text-base text-white hover:text-brand-yellow transition-colors duration-300 leading-[125%]"
-                href=""
-                >Conta digital PJ</a
-              >
-            </li>
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://lp-neon-olive.vercel.app/src/assets/img/share-img.jpg" />
+  <meta property="twitter:title" content="Redesign -  Banco Neon" />
+  <meta property="twitter:description"
+    content="Confira o redesign do site do Banco Neon, um projeto de estudo realizado durante o curso do CodeBoost. Explore as melhorias de design e navegação implementadas para aprimorar a experiência do usuário." />
+  <meta property="twitter:image" content="https://lp-neon-olive.vercel.app/src/assets/img/share-img.jpg" />
+</head>
 
-            <li>
-              <a
-                class="font-poppins font-medium text-base text-white hover:text-brand-yellow transition-colors duration-300 leading-[125%]"
-                href=""
-              >
-                Quem somos
-              </a>
-            </li>
+<body>
+  <header
+    class="absolute top-0 left-0 w-full h-[77px] md:h-[88px] flex justify-center border border-solid border-white/[020%]">
+    <div class="container px-5 flex flex-row items-center justify-between md:justify-around">
+      <a class="max-w-[108px] md:max-w-full" href="">
+        <img src="./src/assets/img/logo.svg" alt="" />
+      </a>
+      <nav class="flex items-center">
+        <ul class="items-center xl:gap-12 xl:mr-[60px] hidden xl:flex">
+          <li>
+            <a class="font-poppins font-medium text-base text-white hover:text-brand-yellow transition-colors duration-300 leading-[125%]"
+              href="">Produtos Neon</a>
+          </li>
 
-            <li>
-              <a
-                class="font-poppins font-medium text-base text-white hover:text-brand-yellow transition-colors duration-300 leading-[125%]"
-                href=""
-                >Blog</a
-              >
-            </li>
+          <li>
+            <a class="font-poppins font-medium text-base text-white hover:text-brand-yellow transition-colors duration-300 leading-[125%]"
+              href="">Conta digital PJ</a>
+          </li>
 
-            <li>
-              <a
-                class="font-poppins font-medium text-base text-white hover:text-brand-yellow transition-colors duration-300 leading-[125%]"
-                href=""
-                >Ajuda</a
-              >
-            </li>
-          </ul>
-          <button
-            class="px-3 xl:px-[18px] w-[217px] h-10 bg-transparent hover:bg-white border-[1px] border-solid border-white transition-all duration-300 rounded-[122px] font-Poppins font-semibold text-base text-white hover:text-brand-green-light hidden md:inline-block"
-          >
-            Abra sua conta digital
-          </button>
-          <button class="block xl:hidden ml-10">
-            <img src="/src/assets/img/btn-mobile.svg" alt="" />
-          </button>
-        </nav>
-      </div>
-    </header>
+          <li>
+            <a class="font-poppins font-medium text-base text-white hover:text-brand-yellow transition-colors duration-300 leading-[125%]"
+              href="">
+              Quem somos
+            </a>
+          </li>
 
-    <section
-      class="bg-hero w-full h-[786px] md:h-[891px] xl:h-[786px] flex flex-col items-center bg-no-repeat bg-center bg-cover pt-[124px] md:pt-[150px] xl:pt-[175px]"
-    >
-      <div
-        class="container px-5 flex flex-col xl:flex-row items-center xl:items-start justify-between xl:justify-center"
-      >
-        <div
-          class="w-full max-xl:max-w-full xl:max-w-[684px] max-xl:flex max-xl: flex-col max-xl:items-center"
-          data-aos="fade-right"
-        >
-          <h3
-            class="font-Poppins text-center xl:text-start text-white font-semibold opacity-80 text-base md:text-lg xl:text-2xl leading-[150%] -tracking-[0.5px] mb-4 md:mb-6 xl:mb-8"
-          >
-            Abra sua conta, é só baixar o app!
-          </h3>
-          <h1
-            class="font-Poppins max-xl:text-center text-white -tracking-[1px] leading-[112%] font-semibold text-[32px] md:text-5xl xl:text-[64px] mb-9 md:mb-[26px] xl:mb-[39px] max-w-[321px] md:max-w-[685px]"
-          >
-            A conta digital certa para cuidar bem do seu dinheiro
-          </h1>
-          <button
-            class="flex justify-center items-center bg-brand-yellow py-4 px-7 hover:bg-[#FFDC5C] transition-all duration-300 rounded-[66px] font-Poppins font-semibold text-base text-[#855B35] max-h-[48px] max-w-[237px]"
-          >
-            Abra sua conta digital
-          </button>
-          <ul
-            class="mt-9 md:mt-10 xl:mt-16 flex flex-col md:flex-row md:items-center w-full justify-start items-start max-w-[300px] md:max-w-[620px] md:justify-between gap-4"
-          >
-            <li class="flex items-center w-full">
-              <div
-                class="w-[2.4rem] h-[2.4rem] md:w-[44px] md:h-[44px] rounded-full flex items-center justify-center bg-gradient-to-b from-f-gradient-blue/40 to-t-gradient-blue mr-3"
-              >
-                <img src="./src/assets/img/icon-anuidade.svg" alt="" />
-              </div>
-              <span
-                class="text-white text-lg md:text-base xl:text-lg leading-5 opacity-90"
-                >Cartão sem <span class="md:block">anuidade</span></span
-              >
-            </li>
-            <li class="flex items-center w-full">
-              <div
-                class="w-[2.4rem] h-[2.4rem] md:w-[44px] md:h-[44px] rounded-full flex items-center justify-center bg-gradient-to-b from-f-gradient-blue/40 to-t-gradient-blue mr-3"
-              >
-                <img src="./src/assets/img/icon-conta-digital.svg" alt="" />
-              </div>
-              <span
-                class="text-white text-lg md:text-base xl:text-lg leading-5 opacity-90"
-                >Conta digital 100% grátis</span
-              >
-            </li>
-            <li class="flex items-center w-full">
-              <div
-                class="w-[2.4rem] h-[2.4rem] md:w-[44px] md:h-[44px] rounded-full flex items-center justify-center bg-gradient-to-b from-f-gradient-blue/40 to-t-gradient-blue mr-3"
-              >
-                <img src="./src/assets/img/icon-dinheiro.svg" alt="" />
-              </div>
-              <span
-                class="text-white text-lg md:text-base xl:text-lg leading-5 opacity-90"
-                >Seu dinheiro <span class="md:block">rendendo mais</span>
-              </span>
-            </li>
-          </ul>
-        </div>
-        <div
-          class="w-full md:-mr-[0px] xl:max-w-[706px] xl:-mr-[80px] 2xl:-mr-[174px] md:mt-[50px] xl:mt-0"
-        >
-          <h2
-            class="hidden md:block text-[40px] xl:text-[56px] font-Poppins text-white/40 -tracking-[1px] leading-[112%] font-semibold text-center xl:mb-16"
-            data-aos="fade-left"
-          >
-            Banco 100% digital
-          </h2>
-          <div
-            class="w-full flex justify-center max-w-[317px] md:max-w-[511px] xl:w-full mx-auto relative mt-[51px] md:mt-5 xl:top-6"
-            data-aos="zoom-in"
-          >
-            <img
-              class="absolute top-[29px] md:top-[35px] 2xl:top-[30px] left-0 md:-left-[67px] 2xl:-left-[140px] z-20 max-w-[211px] md:max-w-[340px] 2xl:max-w-[438px]"
-              src="./src/assets/img/card-neon-frnt.png"
-              alt=""
-            />
-            <img
-              class="absolute -bottom-[246px] md:top-[144px] 2xl:top-[165px] right-[35px] md:right-[64px] 2xl:right-[20px] 2xl:bottom-[46px] z-10 max-w-[170px] md:max-w-[274px] 2xl:max-w-[391px]"
-              src="./src/assets/img/card-neon-back.png"
-              alt=""
-            />
-            <img
-              class="absolute md:top-7 max-md:max-w-[271px] max-2xl:max-w-[429px] 2xl:w-[553px]"
-              src="./src/assets/img/circle-cards-neon.svg"
-              alt=""
-            />
-          </div>
-        </div>
-      </div>
-    </section>
+          <li>
+            <a class="font-poppins font-medium text-base text-white hover:text-brand-yellow transition-colors duration-300 leading-[125%]"
+              href="">Blog</a>
+          </li>
 
-    <section class="pt-[86px] md:pt-[153px] xl:pt-[129px]">
-      <div
-        class="container mx-auto px-5 flex flex-col-reverse xl:flex-row items-start md:items-center xl:items-start justify-between md:justify-center"
-      >
-        <div
-          class="w-full md:mx-auto flex flex-col-reverse md:flex-row xl:flex-col items-center justify-center md:pt-[93px] xl:pt-0 md:max-w-[606px] xl:max-w-[277px] xl:!m-0 xl:!mr-[130px]"
-        >
-          <div
-            class="w-full max-w-[218px] md:max-w-[255px] xl:max-w-[277px] md:h-[541px] xl:h-[564px] relative pt-10 md:pt-0"
-          >
-            <img
-              class="absolute hidden xl:flex -z-10 -left-[214px] top-[88px] max-w-[377px]"
-              src="./src/assets/img/circle-mockup.svg"
-              alt=""
-              data-aos="fade-left"
-            />
-            <img
-              class="drop-shadow-2xl xl:h-full"
-              src="./src/assets/img/mockup.svg"
-              alt=""
-              data-aos="flip-right"
-            />
-          </div>
-          <div
-            class="w-full flex flex-col items-center pt-[117px] md:pt-0 xl:pt-[129px]"
-            data-aos="fade-up"
-          >
+          <li>
+            <a class="font-poppins font-medium text-base text-white hover:text-brand-yellow transition-colors duration-300 leading-[125%]"
+              href="">Ajuda</a>
+          </li>
+        </ul>
+        <button
+          class="px-3 xl:px-[18px] w-[217px] h-10 bg-transparent hover:bg-white border-[1px] border-solid border-white transition-all duration-300 rounded-[122px] font-Poppins font-semibold text-base text-white hover:text-brand-green-light hidden md:inline-block">
+          Abra sua conta digital
+        </button>
+        <button class="block xl:hidden ml-10">
+          <img src="/src/assets/img/btn-mobile.svg" alt="" />
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <section
+    class="bg-hero w-full h-[786px] md:h-[891px] xl:h-[786px] flex flex-col items-center bg-no-repeat bg-center bg-cover pt-[124px] md:pt-[150px] xl:pt-[175px]">
+    <div class="container px-5 flex flex-col xl:flex-row items-center xl:items-start justify-between xl:justify-center">
+      <div class="w-full max-xl:max-w-full xl:max-w-[684px] max-xl:flex max-xl: flex-col max-xl:items-center"
+        data-aos="fade-right">
+        <h3
+          class="font-Poppins text-center xl:text-start text-white font-semibold opacity-80 text-base md:text-lg xl:text-2xl leading-[150%] -tracking-[0.5px] mb-4 md:mb-6 xl:mb-8">
+          Abra sua conta, é só baixar o app!
+        </h3>
+        <h1
+          class="font-Poppins max-xl:text-center text-white -tracking-[1px] leading-[112%] font-semibold text-[32px] md:text-5xl xl:text-[64px] mb-9 md:mb-[26px] xl:mb-[39px] max-w-[321px] md:max-w-[685px]">
+          A conta digital certa para cuidar bem do seu dinheiro
+        </h1>
+        <button
+          class="flex justify-center items-center bg-brand-yellow py-4 px-7 hover:bg-[#FFDC5C] transition-all duration-300 rounded-[66px] font-Poppins font-semibold text-base text-[#855B35] max-h-[48px] max-w-[237px]">
+          Abra sua conta digital
+        </button>
+        <ul
+          class="mt-9 md:mt-10 xl:mt-16 flex flex-col md:flex-row md:items-center w-full justify-start items-start max-w-[300px] md:max-w-[620px] md:justify-between gap-4">
+          <li class="flex items-center w-full">
             <div
-              class="xl:before:content-point xl:before:absolute xl:before:w-1 xl:before:h-20 xl:before:-top-[104px] xl:before:left-[50%] xl:before:-ml-1 relative"
-            >
-              <img src="./src/assets/img/icon-neon.svg" alt="" />
+              class="w-[2.4rem] h-[2.4rem] md:w-[44px] md:h-[44px] rounded-full flex items-center justify-center bg-gradient-to-b from-f-gradient-blue/40 to-t-gradient-blue mr-3">
+              <img src="./src/assets/img/icon-anuidade.svg" alt="" />
             </div>
-            <div class="flex flex-col items-center">
-              <h3
-                class="font-Poppins text-brand-grey-6 font-semibold text-2xl leading-[150%] -tracking-[0.5px] mt-[14px] md:mt-[31px] xl:mt-9"
-              >
-                Baixe nosso app
-              </h3>
-              <p
-                class="text-lg xl:text-base text-brand-grey-4 opacity-70 mb-11 xl:mb-6 leading-[150%] text-center max-w-[270px]"
-              >
-                Que tal abrir uma conta digital para ver como a gente faz a sua
-                vida muito mais simples?
-              </p>
-              <ul>
-                <li class="mb-4 xl:mb-3">
-                  <a href="" target="_blank">
-                    <img src="./src/assets/img/apple-store.svg" alt="" />
-                  </a>
-                </li>
-                <li>
-                  <a href="" target="_blank">
-                    <img src="./src/assets/img/google-play.svg" alt="" />
-                  </a>
-                </li>
-              </ul>
+            <span class="text-white text-lg md:text-base xl:text-lg leading-5 opacity-90">Cartão sem <span
+                class="md:block">anuidade</span></span>
+          </li>
+          <li class="flex items-center w-full">
+            <div
+              class="w-[2.4rem] h-[2.4rem] md:w-[44px] md:h-[44px] rounded-full flex items-center justify-center bg-gradient-to-b from-f-gradient-blue/40 to-t-gradient-blue mr-3">
+              <img src="./src/assets/img/icon-conta-digital.svg" alt="" />
             </div>
+            <span class="text-white text-lg md:text-base xl:text-lg leading-5 opacity-90">Conta digital 100%
+              grátis</span>
+          </li>
+          <li class="flex items-center w-full">
+            <div
+              class="w-[2.4rem] h-[2.4rem] md:w-[44px] md:h-[44px] rounded-full flex items-center justify-center bg-gradient-to-b from-f-gradient-blue/40 to-t-gradient-blue mr-3">
+              <img src="./src/assets/img/icon-dinheiro.svg" alt="" />
+            </div>
+            <span class="text-white text-lg md:text-base xl:text-lg leading-5 opacity-90">Seu dinheiro <span
+                class="md:block">rendendo mais</span>
+            </span>
+          </li>
+        </ul>
+      </div>
+      <div class="w-full md:-mr-[0px] xl:max-w-[706px] xl:-mr-[80px] 2xl:-mr-[174px] md:mt-[50px] xl:mt-0">
+        <h2
+          class="hidden md:block text-[40px] xl:text-[56px] font-Poppins text-white/40 -tracking-[1px] leading-[112%] font-semibold text-center xl:mb-16"
+          data-aos="fade-left">
+          Banco 100% digital
+        </h2>
+        <div
+          class="w-full flex justify-center max-w-[317px] md:max-w-[511px] xl:w-full mx-auto relative mt-[51px] md:mt-5 xl:top-6"
+          data-aos="zoom-in">
+          <img
+            class="absolute top-[29px] md:top-[35px] 2xl:top-[30px] left-0 md:-left-[67px] 2xl:-left-[140px] z-20 max-w-[211px] md:max-w-[340px] 2xl:max-w-[438px] animate-floating"
+            src="./src/assets/img/card-neon-frnt.png" alt="" />
+          <img
+            class="absolute -bottom-[246px] md:top-[144px] 2xl:top-[165px] right-[35px] md:right-[64px] 2xl:right-[20px] 2xl:bottom-[46px] z-10 max-w-[170px] md:max-w-[274px] 2xl:max-w-[391px] animate-floatingslow"
+            src="./src/assets/img/card-neon-back.png" alt="" />
+          <img class="absolute md:top-7 max-md:max-w-[271px] max-2xl:max-w-[429px] 2xl:w-[553px]"
+            src="./src/assets/img/circle-cards-neon.svg" alt="" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="pt-[86px] md:pt-[153px] xl:pt-[129px]">
+    <div
+      class="container mx-auto px-5 flex flex-col-reverse xl:flex-row items-start md:items-center xl:items-start justify-between md:justify-center">
+      <div
+        class="w-full md:mx-auto flex flex-col-reverse md:flex-row xl:flex-col items-center justify-center md:pt-[93px] xl:pt-0 md:max-w-[606px] xl:max-w-[277px] xl:!m-0 xl:!mr-[130px]">
+        <div
+          class="w-full max-w-[218px] md:max-w-[255px] xl:max-w-[277px] md:h-[541px] xl:h-[564px] relative pt-10 md:pt-0">
+          <img class="absolute hidden xl:flex -z-10 -left-[214px] top-[88px] max-w-[377px]"
+            src="./src/assets/img/circle-mockup.svg" alt="" data-aos="fade-left" />
+          <img class="drop-shadow-2xl xl:h-full" src="./src/assets/img/mockup.svg" alt="" data-aos="flip-right" />
+        </div>
+        <div class="w-full flex flex-col items-center pt-[117px] md:pt-0 xl:pt-[129px]" data-aos="fade-up">
+          <div
+            class="xl:before:content-point xl:before:absolute xl:before:w-1 xl:before:h-20 xl:before:-top-[104px] xl:before:left-[50%] xl:before:-ml-1 relative">
+            <img src="./src/assets/img/icon-neon.svg" alt="" />
+          </div>
+          <div class="flex flex-col items-center">
+            <h3
+              class="font-Poppins text-brand-grey-6 font-semibold text-2xl leading-[150%] -tracking-[0.5px] mt-[14px] md:mt-[31px] xl:mt-9">
+              Baixe nosso app
+            </h3>
+            <p
+              class="text-lg xl:text-base text-brand-grey-4 opacity-70 mb-11 xl:mb-6 leading-[150%] text-center max-w-[270px]">
+              Que tal abrir uma conta digital para ver como a gente faz a sua
+              vida muito mais simples?
+            </p>
+            <ul>
+              <li class="mb-4 xl:mb-3">
+                <a href="" target="_blank">
+                  <img src="./src/assets/img/apple-store.svg" alt="" />
+                </a>
+              </li>
+              <li>
+                <a href="" target="_blank">
+                  <img src="./src/assets/img/google-play.svg" alt="" />
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
-        <div class="w-full max-w-[800px] xl:items-start justify-start">
-          <div
-            class="mb-[34px] md:mb-[57px] xl:mb-[144px] flex flex-col items-center xl:items-start"
-            data-aos="fade-left"
-          >
+      </div>
+      <div class="w-full max-w-[800px] xl:items-start justify-start">
+        <div class="mb-[34px] md:mb-[57px] xl:mb-[144px] flex flex-col items-center xl:items-start"
+          data-aos="fade-left">
+          <h2
+            class="font-Poppins text-brand-grey-6 -tracking-[1px] leading-[112%] font-semibold text-[28px] md:text-4xl xl:text-[40px] text-center xl:text-start max-w-[317px] md:max-w-[424px] xl:max-w-[488px] mb-[37px] md:mb-[53px] xl:mb-12">
+            Resolva sua vida direto pelo app Neon!
+          </h2>
+          <ul class="mb-10 xl:mb-9">
+            <li
+              class="flex items-center justify-between border-t-0 border-r-0 border-l-0 border-solid border-b border-[#e1e0e7]/90 w-full pb-[10px] xl:pb-[29px]">
+              <div class="flex items-start">
+                <img src="./src/assets/img/icon-cartao-credito.svg" alt="" />
+                <div class="ml-6 md:ml-[30px] xl:ml-11">
+                  <h3
+                    class="font-Poppins text-brand-grey-4 font-semibold text-xl md:text-2xl xl:leading-[150%] -tracking-[0.5px] max-w-[191px] md:max-w-[382px]">
+                    Cartão de crédito sem anuidade
+                  </h3>
+                  <p
+                    class="leading-[150%] text-[#7A7786] text-sm md:text-lg max-w-[227px] md:max-w-[550px] xl:max-w-[593px]">
+                    Conta digital com cartão de crédito sem anuidade e sem
+                    complicação
+                  </p>
+                </div>
+              </div>
+              <img src="./src/assets/img/arrow-right.svg" alt="" />
+            </li>
+            <li
+              class="flex items-center justify-between border-t-0 border-r-0 border-l-0 border-solid border-b border-[#e1e0e7]/90 w-full py-7">
+              <div class="flex items-start">
+                <img src="./src/assets/img/icon-taxas.svg" alt="" />
+                <div class="ml-6 md:ml-[30px] xl:ml-11">
+                  <h3
+                    class="font-Poppins text-brand-grey-4 font-semibold text-xl md:text-2xl xl:leading-[150%] -tracking-[0.5px] max-w-[191px] md:max-w-[382px]">
+                    Sem taxas
+                  </h3>
+                  <p
+                    class="leading-[150%] text-[#7A7786] text-sm md:text-lg max-w-[227px] md:max-w-[494px] xl:max-w-[537px]">
+                    Transferências, boletos de depósito e outros serviços
+                    gratuitos
+                  </p>
+                </div>
+              </div>
+              <img src="./src/assets/img/arrow-right.svg" alt="" />
+            </li>
+            <li
+              class="flex items-center justify-between border-t-0 border-r-0 border-l-0 border-solid border-b border-[#e1e0e7]/90 w-full py-[37px]">
+              <div class="flex items-start">
+                <img src="./src/assets/img/icon-investimentos.svg" alt="" />
+                <div class="ml-6 md:ml-[30px] xl:ml-11">
+                  <h3
+                    class="font-Poppins text-brand-grey-4 font-semibold text-xl md:text-2xl xl:leading-[150%] -tracking-[0.5px] max-w-[191px] md:max-w-[382px]">
+                    Mais investimentos
+                  </h3>
+                  <p
+                    class="leading-[150%] text-[#7A7786] text-sm md:text-lg max-w-[227px] md:max-w-[479px] xl:max-w-[513px]">
+                    Rendem mais que a poupança e você resgata quando quiser
+                  </p>
+                </div>
+              </div>
+              <img src="./src/assets/img/arrow-right.svg" alt="" />
+            </li>
+          </ul>
+          <a class="font-poppins font-medium text-lg leading-[112%] -tracking-[0.5px] text-brand-blue" href="">Conheça
+            outros produtos</a>
+        </div>
+        <div
+          class="h-[470px] md:h-[352px] xl:h-[410px] max-w-[336px] md:max-w-[688px] xl:max-w-[800px] mx-auto bg-[url('/src/assets/img/bg-box-card-neon.svg')] bg-no-repeat bg-bottom md:bg-center bg-cover rounded-xl flex flex-col md:flex-row items-center xl:justify-between md:pl-[50px] xl:pl-[59px] xl:ml-0 relative"
+          data-aos="fade-left">
+          <div class="w-full max-w-[380px] md:max-w-[326px] flex flex-col items-center">
             <h2
-              class="font-Poppins text-brand-grey-6 -tracking-[1px] leading-[112%] font-semibold text-[28px] md:text-4xl xl:text-[40px] text-center xl:text-start max-w-[317px] md:max-w-[424px] xl:max-w-[488px] mb-[37px] md:mb-[53px] xl:mb-12"
-            >
-              Resolva sua vida direto pelo app Neon!
+              class="font-Poppins text-white -tracking-[1px] leading-[112%] font-bold text-[28px] md:text-[32px] xl:text-[40px] text-center md:text-start pt-[43px] md:pt-0 mb-3 md:w-full">
+              Neon Pejota
             </h2>
-            <ul class="mb-10 xl:mb-9">
-              <li
-                class="flex items-center justify-between border-t-0 border-r-0 border-l-0 border-solid border-b border-[#e1e0e7]/90 w-full pb-[10px] xl:pb-[29px]"
-              >
-                <div class="flex items-start">
-                  <img src="./src/assets/img/icon-cartao-credito.svg" alt="" />
-                  <div class="ml-6 md:ml-[30px] xl:ml-11">
-                    <h3
-                      class="font-Poppins text-brand-grey-4 font-semibold text-xl md:text-2xl xl:leading-[150%] -tracking-[0.5px] max-w-[191px] md:max-w-[382px]"
-                    >
-                      Cartão de crédito sem anuidade
-                    </h3>
-                    <p
-                      class="leading-[150%] text-[#7A7786] text-sm md:text-lg max-w-[227px] md:max-w-[550px] xl:max-w-[593px]"
-                    >
-                      Conta digital com cartão de crédito sem anuidade e sem
-                      complicação
-                    </p>
-                  </div>
-                </div>
-                <img src="./src/assets/img/arrow-right.svg" alt="" />
-              </li>
-              <li
-                class="flex items-center justify-between border-t-0 border-r-0 border-l-0 border-solid border-b border-[#e1e0e7]/90 w-full py-7"
-              >
-                <div class="flex items-start">
-                  <img src="./src/assets/img/icon-taxas.svg" alt="" />
-                  <div class="ml-6 md:ml-[30px] xl:ml-11">
-                    <h3
-                      class="font-Poppins text-brand-grey-4 font-semibold text-xl md:text-2xl xl:leading-[150%] -tracking-[0.5px] max-w-[191px] md:max-w-[382px]"
-                    >
-                      Sem taxas
-                    </h3>
-                    <p
-                      class="leading-[150%] text-[#7A7786] text-sm md:text-lg max-w-[227px] md:max-w-[494px] xl:max-w-[537px]"
-                    >
-                      Transferências, boletos de depósito e outros serviços
-                      gratuitos
-                    </p>
-                  </div>
-                </div>
-                <img src="./src/assets/img/arrow-right.svg" alt="" />
-              </li>
-              <li
-                class="flex items-center justify-between border-t-0 border-r-0 border-l-0 border-solid border-b border-[#e1e0e7]/90 w-full py-[37px]"
-              >
-                <div class="flex items-start">
-                  <img src="./src/assets/img/icon-investimentos.svg" alt="" />
-                  <div class="ml-6 md:ml-[30px] xl:ml-11">
-                    <h3
-                      class="font-Poppins text-brand-grey-4 font-semibold text-xl md:text-2xl xl:leading-[150%] -tracking-[0.5px] max-w-[191px] md:max-w-[382px]"
-                    >
-                      Mais investimentos
-                    </h3>
-                    <p
-                      class="leading-[150%] text-[#7A7786] text-sm md:text-lg max-w-[227px] md:max-w-[479px] xl:max-w-[513px]"
-                    >
-                      Rendem mais que a poupança e você resgata quando quiser
-                    </p>
-                  </div>
-                </div>
-                <img src="./src/assets/img/arrow-right.svg" alt="" />
-              </li>
-            </ul>
-            <a
-              class="font-poppins font-medium text-lg leading-[112%] -tracking-[0.5px] text-brand-blue"
-              href=""
-              >Conheça outros produtos</a
-            >
-          </div>
-          <div
-            class="h-[470px] md:h-[352px] xl:h-[410px] max-w-[336px] md:max-w-[688px] xl:max-w-[800px] mx-auto bg-[url('/src/assets/img/bg-box-card-neon.svg')] bg-no-repeat bg-bottom md:bg-center bg-cover rounded-xl flex flex-col md:flex-row items-center xl:justify-between md:pl-[50px] xl:pl-[59px] xl:ml-0 relative"
-            data-aos="fade-left"
-          >
-            <div
-              class="w-full max-w-[380px] md:max-w-[326px] flex flex-col items-center"
-            >
-              <h2
-                class="font-Poppins text-white -tracking-[1px] leading-[112%] font-bold text-[28px] md:text-[32px] xl:text-[40px] text-center md:text-start pt-[43px] md:pt-0 mb-3 md:w-full"
-              >
-                Neon Pejota
-              </h2>
-              <h3
-                class="font-Poppins text-white font-semibold text-xl md:text-2xl leading-[150%] -tracking-[0.5px] max-w-[281px] md:max-w-[326px] mb-2 text-center md:text-start"
-              >
-                Contas digitais PJ gratuitas para decolar seu negócio!
-              </h3>
-              <p
-                class="leading-[150%] text-white text-base text-center md:text-start mb-8 md:mb-0 xl:mb-4 max-w-[253px] md:max-w-[311px] xl:max-w-[327px]"
-              >
-                As melhores contas para fazer pagamentos, compras e receber dos
-                seus clientes.
-              </p>
-              <div class="flex gap-4 items-center md:items-start md:w-full">
-                <button
-                  class="flex justify-center items-center bg-brand-yellow py-4 px-7 hover:bg-[#FFDC5C] transition-all duration-300 rounded-[66px] font-Poppins font-semibold text-base text-[#855B35] max-h-[48px] max-w-[237px]"
-                >
-                  SOU MEI
-                </button>
-                <button
-                  class="flex justify-center items-center bg-brand-yellow py-4 px-7 hover:bg-[#FFDC5C] transition-all duration-300 rounded-[66px] font-Poppins font-semibold text-base text-[#855B35] max-h-[48px] max-w-[237px] z-10 md:z-0"
-                >
-                  SOU PJ
-                </button>
-              </div>
+            <h3
+              class="font-Poppins text-white font-semibold text-xl md:text-2xl leading-[150%] -tracking-[0.5px] max-w-[281px] md:max-w-[326px] mb-2 text-center md:text-start">
+              Contas digitais PJ gratuitas para decolar seu negócio!
+            </h3>
+            <p
+              class="leading-[150%] text-white text-base text-center md:text-start mb-8 md:mb-0 xl:mb-4 max-w-[253px] md:max-w-[311px] xl:max-w-[327px]">
+              As melhores contas para fazer pagamentos, compras e receber dos
+              seus clientes.
+            </p>
+            <div class="flex gap-4 items-center md:items-start md:w-full">
+              <button
+                class="flex justify-center items-center bg-brand-yellow py-4 px-7 hover:bg-[#FFDC5C] transition-all duration-300 rounded-[66px] font-Poppins font-semibold text-base text-[#855B35] max-h-[48px] max-w-[237px]">
+                SOU MEI
+              </button>
+              <button
+                class="flex justify-center items-center bg-brand-yellow py-4 px-7 hover:bg-[#FFDC5C] transition-all duration-300 rounded-[66px] font-Poppins font-semibold text-base text-[#855B35] max-h-[48px] max-w-[237px] z-10 md:z-0">
+                SOU PJ
+              </button>
             </div>
-            <img
-              class="md:absolute mt-[34px] md:mt-0 max-w-[277px] md:max-w-[293px] xl:max-w-[341px] md:-right-[26px] xl:-right-[31px]"
-              src="/src/assets/img/card-front-pj.svg"
-              alt=""
-            />
           </div>
+          <img
+            class="md:absolute mt-[34px] md:mt-0 max-w-[277px] md:max-w-[293px] xl:max-w-[341px] md:-right-[26px] xl:-right-[31px]"
+            src="/src/assets/img/card-front-pj.svg" alt="" />
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="pt-20 md:pt-[109px] xl:pt-[134px]">
-      <div class="container p-0 max-md:max-w-full max-w-[1214px] mx-auto">
-        <div
-          class="mb-9 md:mb-14 flex flex-col items-center justify-center xl:items-end xl:justify-between relative w-full"
-          data-aos="fade-right"
-        >
-          <h2
-            class="font-Poppins text-brand-grey-2 -tracking-[1px] leading-[112%] font-bold text-2xl md:text-4xl xl:text-[40px] text-center xl:text-start w-full"
-          >
-            Prático, fácil, moderno
-            <span
-              class="block font-Poppins text-brand-grey-6 -tracking-[1px] leading-[112%] font-bold text-[28px] md:text-4xl xl:text-[40px] max-w-[239px] md:max-w-[549px] xl:max-w-[618px] text-center xl:text-start mb-9 md:mb-12 xl:mb-0 pt-3 xl:pt-[14px] mx-auto xl:m-0"
-              >Você resolve tudo sem estresse</span
-            >
-          </h2>
-          <div class="paginator-depoimentos relative flex !w-auto"></div>
-        </div>
-        <div
-          class="depoimentos overflow-hidden px-5 xl:px-0"
-          data-aos="fade-up"
-        >
-          <div class="swiper-wrapper">
-            <div
-              class="swiper-slide w-[249px] xl:max-w-full bg-brand-grey-1/[55%] rounded-lg pt-[37px] px-[32px] pb-10"
-            >
-              <div class="flex items-center justify-between mb-5">
-                <strong
-                  class="font-Poppins text-brand-grey-5 font-semibold text-lg leading-[112%] -tracking-[1px]"
-                  >@gewsf</strong
-                >
-                <img src="./src/assets/img/icon-twiiter.svg" alt="" />
-              </div>
-              <p class="font-Inter text-lg leading-[150%] text-brand-grey-4">
-                Valeu @banconenon! Linda embalagem e o cartão tbm é lindo! Muito
-                amor por esse banco #bancoNeon
-              </p>
-            </div>
-            <div
-              class="swiper-slide w-[249px] xl:max-w-full bg-brand-grey-1/[55%] rounded-lg pt-[37px] px-[32px] pb-10"
-            >
-              <div class="flex items-center justify-between mb-5">
-                <strong
-                  class="font-Poppins text-brand-grey-5 font-semibold text-lg leading-[112%] -tracking-[1px]"
-                  >@gewsf</strong
-                >
-                <img src="./src/assets/img/icon-twiiter.svg" alt="" />
-              </div>
-              <p class="font-Inter text-lg leading-[150%] text-brand-grey-4">
-                Valeu @banconenon! Linda embalagem e o cartão tbm é lindo! Muito
-                amor por esse banco #bancoNeon
-              </p>
-            </div>
-            <div
-              class="swiper-slide w-[249px] xl:max-w-full bg-brand-grey-1/[55%] rounded-lg pt-[37px] px-[32px] pb-10"
-            >
-              <div class="flex items-center justify-between mb-5">
-                <strong
-                  class="font-Poppins text-brand-grey-5 font-semibold text-lg leading-[112%] -tracking-[1px]"
-                  >@gewsf</strong
-                >
-                <img src="./src/assets/img/icon-twiiter.svg" alt="" />
-              </div>
-              <p class="font-Inter text-lg leading-[150%] text-brand-grey-4">
-                Valeu @banconenon! Linda embalagem e o cartão tbm é lindo! Muito
-                amor por esse banco #bancoNeon
-              </p>
-            </div>
-            <div
-              class="swiper-slide w-[249px] xl:max-w-full bg-brand-grey-1/[55%] rounded-lg pt-[37px] px-[32px] pb-10"
-            >
-              <div class="flex items-center justify-between mb-5">
-                <strong
-                  class="font-Poppins text-brand-grey-5 font-semibold text-lg leading-[112%] -tracking-[1px]"
-                  >@gewsf</strong
-                >
-                <img src="./src/assets/img/icon-twiiter.svg" alt="" />
-              </div>
-              <p class="font-Inter text-lg leading-[150%] text-brand-grey-4">
-                Valeu @banconenon! Linda embalagem e o cartão tbm é lindo! Muito
-                amor por esse banco #bancoNeon
-              </p>
-            </div>
-            <div
-              class="swiper-slide w-[249px] xl:max-w-full bg-brand-grey-1/[55%] rounded-lg pt-[37px] px-[32px] pb-10"
-            >
-              <div class="flex items-center justify-between mb-5">
-                <strong
-                  class="font-Poppins text-brand-grey-5 font-semibold text-lg leading-[112%] -tracking-[1px]"
-                  >@gewsf</strong
-                >
-                <img src="./src/assets/img/icon-twiiter.svg" alt="" />
-              </div>
-              <p class="font-Inter text-lg leading-[150%] text-brand-grey-4">
-                Valeu @banconenon! Linda embalagem e o cartão tbm é lindo! Muito
-                amor por esse banco #bancoNeon
-              </p>
-            </div>
-            <div
-              class="swiper-slide w-[249px] xl:max-w-full bg-brand-grey-1/[55%] rounded-lg pt-[37px] px-[32px] pb-10"
-            >
-              <div class="flex items-center justify-between mb-5">
-                <strong
-                  class="font-Poppins text-brand-grey-5 font-semibold text-lg leading-[112%] -tracking-[1px]"
-                  >@gewsf</strong
-                >
-                <img src="./src/assets/img/icon-twiiter.svg" alt="" />
-              </div>
-              <p class="font-Inter text-lg leading-[150%] text-brand-grey-4">
-                Valeu @banconenon! Linda embalagem e o cartão tbm é lindo! Muito
-                amor por esse banco #bancoNeon
-              </p>
-            </div>
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="pt-[57px] pb-[130px] md:pb-[250px] xl:pt-[127px]">
+  <section class="pt-20 md:pt-[109px] xl:pt-[134px]">
+    <div class="container p-0 max-md:max-w-full max-w-[1214px] mx-auto">
       <div
-        class="container mx-auto max-md:max-w-full max-w-[1214px] px-5 flex flex-col xl:flex-row items-center xl:items-start"
-      >
-        <div
-          class="max-w-[542px] md:max-w-[630px] flex flex-col"
-          data-aos="fade-right"
-        >
-          <h2
-            class="font-Poppins text-brand-grey-2 -tracking-[1px] leading-[112%] font-bold text-2xl xl:text-[40px] text-center xl:text-start mb-10 xl:mb-[45px] w-full"
-          >
-            Aproveite<span
-              class="block font-Poppins text-brand-grey-6 -tracking-[1px] leading-[112%] font-bold text-[28px] xl:text-[40px] mt-2 text-center xl:text-start max-w-[356px] md:max-w-[489px] xl:max-w-[542px] max-xl:mx-auto"
-              >Domine o seu dinheiro com uma conta 100% digital</span
-            >
-          </h2>
-          <ul class="">
-            <li
-              class="flex flex-col md:flex-row items-center xl:items-start gap-4 xl:gap-6 mb-6 xl:mb-11"
-            >
-              <div
-                class="w-[45px] h-[45px] bg-brand-green-light rounded-lg flex items-center justify-center"
-              >
-                <img
-                  src="/src/assets/img/icon-cartao-internacional.svg"
-                  alt=""
-                />
-              </div>
-              <div
-                class="flex flex-col items-center md:items-start justify-center"
-              >
-                <h4
-                  class="font-Poppins text-brand-grey-4 font-semibold text-xl md:text-2xl leading-[112%] -tracking-[0.5px] text-center md:text-left"
-                >
-                  Cartão visa internacional
-                </h4>
-                <p
-                  class="text-sm md:text-lg leading-[150%] text-brand-grey-3 w-[220px] xl:w-[433px] md:w-full text-center md:text-left"
-                >
-                  Tenha facilidades e benefícios para o seu dia a dia.
-                </p>
-              </div>
+        class="mb-9 md:mb-14 flex flex-col items-center justify-center xl:items-end xl:justify-between relative w-full"
+        data-aos="fade-right">
+        <h2
+          class="font-Poppins text-brand-grey-2 -tracking-[1px] leading-[112%] font-bold text-2xl md:text-4xl xl:text-[40px] text-center xl:text-start w-full">
+          Prático, fácil, moderno
+          <span
+            class="block font-Poppins text-brand-grey-6 -tracking-[1px] leading-[112%] font-bold text-[28px] md:text-4xl xl:text-[40px] max-w-[239px] md:max-w-[549px] xl:max-w-[618px] text-center xl:text-start mb-9 md:mb-12 xl:mb-0 pt-3 xl:pt-[14px] mx-auto xl:m-0">Você
+            resolve tudo sem estresse</span>
+        </h2>
+        <div class="paginator-depoimentos relative flex !w-auto"></div>
+      </div>
+      <div class="depoimentos overflow-hidden px-5 xl:px-0" data-aos="fade-up">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide w-[249px] xl:max-w-full bg-brand-grey-1/[55%] rounded-lg pt-[37px] px-[32px] pb-10">
+            <div class="flex items-center justify-between mb-5">
+              <strong
+                class="font-Poppins text-brand-grey-5 font-semibold text-lg leading-[112%] -tracking-[1px]">@gewsf</strong>
+              <img src="./src/assets/img/icon-twiiter.svg" alt="" />
+            </div>
+            <p class="font-Inter text-lg leading-[150%] text-brand-grey-4">
+              Valeu @banconenon! Linda embalagem e o cartão tbm é lindo! Muito
+              amor por esse banco #bancoNeon
+            </p>
+          </div>
+          <div class="swiper-slide w-[249px] xl:max-w-full bg-brand-grey-1/[55%] rounded-lg pt-[37px] px-[32px] pb-10">
+            <div class="flex items-center justify-between mb-5">
+              <strong
+                class="font-Poppins text-brand-grey-5 font-semibold text-lg leading-[112%] -tracking-[1px]">@gewsf</strong>
+              <img src="./src/assets/img/icon-twiiter.svg" alt="" />
+            </div>
+            <p class="font-Inter text-lg leading-[150%] text-brand-grey-4">
+              Valeu @banconenon! Linda embalagem e o cartão tbm é lindo! Muito
+              amor por esse banco #bancoNeon
+            </p>
+          </div>
+          <div class="swiper-slide w-[249px] xl:max-w-full bg-brand-grey-1/[55%] rounded-lg pt-[37px] px-[32px] pb-10">
+            <div class="flex items-center justify-between mb-5">
+              <strong
+                class="font-Poppins text-brand-grey-5 font-semibold text-lg leading-[112%] -tracking-[1px]">@gewsf</strong>
+              <img src="./src/assets/img/icon-twiiter.svg" alt="" />
+            </div>
+            <p class="font-Inter text-lg leading-[150%] text-brand-grey-4">
+              Valeu @banconenon! Linda embalagem e o cartão tbm é lindo! Muito
+              amor por esse banco #bancoNeon
+            </p>
+          </div>
+          <div class="swiper-slide w-[249px] xl:max-w-full bg-brand-grey-1/[55%] rounded-lg pt-[37px] px-[32px] pb-10">
+            <div class="flex items-center justify-between mb-5">
+              <strong
+                class="font-Poppins text-brand-grey-5 font-semibold text-lg leading-[112%] -tracking-[1px]">@gewsf</strong>
+              <img src="./src/assets/img/icon-twiiter.svg" alt="" />
+            </div>
+            <p class="font-Inter text-lg leading-[150%] text-brand-grey-4">
+              Valeu @banconenon! Linda embalagem e o cartão tbm é lindo! Muito
+              amor por esse banco #bancoNeon
+            </p>
+          </div>
+          <div class="swiper-slide w-[249px] xl:max-w-full bg-brand-grey-1/[55%] rounded-lg pt-[37px] px-[32px] pb-10">
+            <div class="flex items-center justify-between mb-5">
+              <strong
+                class="font-Poppins text-brand-grey-5 font-semibold text-lg leading-[112%] -tracking-[1px]">@gewsf</strong>
+              <img src="./src/assets/img/icon-twiiter.svg" alt="" />
+            </div>
+            <p class="font-Inter text-lg leading-[150%] text-brand-grey-4">
+              Valeu @banconenon! Linda embalagem e o cartão tbm é lindo! Muito
+              amor por esse banco #bancoNeon
+            </p>
+          </div>
+          <div class="swiper-slide w-[249px] xl:max-w-full bg-brand-grey-1/[55%] rounded-lg pt-[37px] px-[32px] pb-10">
+            <div class="flex items-center justify-between mb-5">
+              <strong
+                class="font-Poppins text-brand-grey-5 font-semibold text-lg leading-[112%] -tracking-[1px]">@gewsf</strong>
+              <img src="./src/assets/img/icon-twiiter.svg" alt="" />
+            </div>
+            <p class="font-Inter text-lg leading-[150%] text-brand-grey-4">
+              Valeu @banconenon! Linda embalagem e o cartão tbm é lindo! Muito
+              amor por esse banco #bancoNeon
+            </p>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="pt-[57px] pb-[130px] md:pb-[250px] xl:pt-[127px]">
+    <div
+      class="container mx-auto max-md:max-w-full max-w-[1214px] px-5 flex flex-col xl:flex-row items-center xl:items-start">
+      <div class="max-w-[542px] md:max-w-[630px] flex flex-col" data-aos="fade-right">
+        <h2
+          class="font-Poppins text-brand-grey-2 -tracking-[1px] leading-[112%] font-bold text-2xl xl:text-[40px] text-center xl:text-start mb-10 xl:mb-[45px] w-full">
+          Aproveite<span
+            class="block font-Poppins text-brand-grey-6 -tracking-[1px] leading-[112%] font-bold text-[28px] xl:text-[40px] mt-2 text-center xl:text-start max-w-[356px] md:max-w-[489px] xl:max-w-[542px] max-xl:mx-auto">Domine
+            o seu dinheiro com uma conta 100% digital</span>
+        </h2>
+        <ul class="">
+          <li class="flex flex-col md:flex-row items-center xl:items-start gap-4 xl:gap-6 mb-6 xl:mb-11">
+            <div class="w-[45px] h-[45px] bg-brand-green-light rounded-lg flex items-center justify-center">
+              <img src="/src/assets/img/icon-cartao-internacional.svg" alt="" />
+            </div>
+            <div class="flex flex-col items-center md:items-start justify-center">
+              <h4
+                class="font-Poppins text-brand-grey-4 font-semibold text-xl md:text-2xl leading-[112%] -tracking-[0.5px] text-center md:text-left">
+                Cartão visa internacional
+              </h4>
+              <p
+                class="text-sm md:text-lg leading-[150%] text-brand-grey-3 w-[220px] xl:w-[433px] md:w-full text-center md:text-left">
+                Tenha facilidades e benefícios para o seu dia a dia.
+              </p>
+            </div>
+          </li>
+          <li class="flex flex-col md:flex-row items-center xl:items-start gap-4 xl:gap-6 mb-6 xl:mb-11">
+            <div class="w-[45px] h-[45px] bg-brand-green-light rounded-lg flex items-center justify-center">
+              <img src="/src/assets/img/icon-taxa-zero.svg" alt="" />
+            </div>
+            <div class="flex flex-col items-center md:items-start justify-center">
+              <h4
+                class="font-Poppins text-brand-grey-4 font-semibold text-xl md:text-2xl leading-[112%] -tracking-[0.5px] text-center md:text-start">
+                Zero mensalidade e anuidade
+              </h4>
+              <p
+                class="text-sm md:text-lg leading-[150%] text-brand-grey-3 w-[220px] md:w-full text-center md:text-left">
+                Não gaste grana pagando taxas desnecessárias.
+              </p>
+            </div>
+          </li>
+          <li class="flex flex-col md:flex-row items-center xl:items-start gap-4 xl:gap-6 mb-6 xl:mb-[49px]">
+            <div class="w-[45px] h-[45px] bg-brand-green-light rounded-lg flex items-center justify-center">
+              <img src="/src/assets/img/icon-poupanca.svg" alt="" />
+            </div>
+            <div class="flex flex-col items-center md:items-start justify-center">
+              <h4
+                class="font-Poppins text-brand-grey-4 font-semibold text-xl md:text-2xl leading-[112%] -tracking-[0.5px] text-center md:text-left">
+                Investimento que rende mais que a poupança
+              </h4>
+              <p
+                class="text-sm md:text-lg leading-[150%] text-brand-grey-3 w-[220px] md:w-full text-center md:text-left">
+                Invista o seu dinheiro de maneira mais rentável.
+              </p>
+            </div>
+          </li>
+        </ul>
+        <button
+          class="inline-block bg-brand-yellow hover:bg-[#FFDC5C] transition-all duration-300 rounded-[122px] py-4 font-Poppins font-semibold text-base text-[#855B35] w-[237px] max-xl:mx-auto">
+          Abra sua conta digital
+        </button>
+      </div>
+      <div
+        class="relative mt-11 md:mt-[133px] xl:mt-0 w-full h-[411px] max-w-[357px] md:max-w-[582px] xl:max-w-[671px] max-h-[411px] xl:h-[598px] xl:left-[118px]">
+        <img
+          class="absolute w-[168px] md:w-[225px] h-[352px] md:h-[478px] top-[57px] md:top-[25px] xl:top-[70px] -left-[10px] md:left-[52px] xl:-left-[60px] z-10"
+          src="/src/assets/img/mockup-01.svg" alt="" data-aos="fade-up" />
+        <img
+          class="absolute w-[168px] md:w-[225px] h-[357px] md:h-[478px] top-0 md:-top-[51px] xl:-top-0 -right-[10px] md:right-[51px] xl:right-[253px] z-10"
+          src="/src/assets/img/mockup-02.png" alt="" data-aos="fade-down" />
+        <img
+          class="invisible xl:visible absolute w-[323px] md:w-[582px] xl:w-[510px] top-[146px] md:top-0 xl:right-0 xl:top-[123px]"
+          src="/src/assets/img/circle-conta-digital.svg" alt="" data-aos="zoom-in" />
+        <img class="absolute xl:invisible w-[323px] md:w-[582px] xl:w-[510px] top-[146px] md:top-0 right-0"
+          src="/src/assets/img/circle-conta-digital-mobile.svg" alt="" data-aos="zoom-in" />
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-brand-blue pt-12 md:pt-9">
+    <div class="container mx-auto max-md:max-w-full max-w-[1214px] px-5">
+      <div
+        class="flex flex-col md:flex-row items-center md:justify-between pb-11 xl:pb-12 mb-14 border-solid border-2 border-[#49C5FD]/20 border-r-0 border-t-0 border-l-0">
+        <img class="max-w-[108px] md:max-w-[131px] mb-8 md:mb-0" src="/src/assets/img/logo.svg" alt="" />
+        <div class="flex flex-col md:flex-row items-center gap-8">
+          <span class="text-white text-sm leading-[125%] text-right opacity-70">Acompanhe nas redes</span>
+          <ul class="flex items-center justify-center gap-8">
+            <li>
+              <a href=""><img class="w-5 h-5" src="/src/assets/img/youtube.svg" alt="" /></a>
             </li>
-            <li
-              class="flex flex-col md:flex-row items-center xl:items-start gap-4 xl:gap-6 mb-6 xl:mb-11"
-            >
-              <div
-                class="w-[45px] h-[45px] bg-brand-green-light rounded-lg flex items-center justify-center"
-              >
-                <img src="/src/assets/img/icon-taxa-zero.svg" alt="" />
-              </div>
-              <div
-                class="flex flex-col items-center md:items-start justify-center"
-              >
-                <h4
-                  class="font-Poppins text-brand-grey-4 font-semibold text-xl md:text-2xl leading-[112%] -tracking-[0.5px] text-center md:text-start"
-                >
-                  Zero mensalidade e anuidade
-                </h4>
-                <p
-                  class="text-sm md:text-lg leading-[150%] text-brand-grey-3 w-[220px] md:w-full text-center md:text-left"
-                >
-                  Não gaste grana pagando taxas desnecessárias.
-                </p>
-              </div>
+            <li>
+              <a href=""><img class="w-5 h-5" src="/src/assets/img/linkedin.svg" alt="" /></a>
             </li>
-            <li
-              class="flex flex-col md:flex-row items-center xl:items-start gap-4 xl:gap-6 mb-6 xl:mb-[49px]"
-            >
-              <div
-                class="w-[45px] h-[45px] bg-brand-green-light rounded-lg flex items-center justify-center"
-              >
-                <img src="/src/assets/img/icon-poupanca.svg" alt="" />
-              </div>
-              <div
-                class="flex flex-col items-center md:items-start justify-center"
-              >
-                <h4
-                  class="font-Poppins text-brand-grey-4 font-semibold text-xl md:text-2xl leading-[112%] -tracking-[0.5px] text-center md:text-left"
-                >
-                  Investimento que rende mais que a poupança
-                </h4>
-                <p
-                  class="text-sm md:text-lg leading-[150%] text-brand-grey-3 w-[220px] md:w-full text-center md:text-left"
-                >
-                  Invista o seu dinheiro de maneira mais rentável.
-                </p>
-              </div>
+            <li>
+              <a href=""><img class="w-5 h-5" src="/src/assets/img/facebook.svg" alt="" /></a>
+            </li>
+            <li>
+              <a href=""><img class="w-5 h-5" src="/src/assets/img/instagram.svg" alt="" /></a>
             </li>
           </ul>
-          <button
-            class="inline-block bg-brand-yellow hover:bg-[#FFDC5C] transition-all duration-300 rounded-[122px] py-4 font-Poppins font-semibold text-base text-[#855B35] w-[237px] max-xl:mx-auto"
-          >
-            Abra sua conta digital
-          </button>
-        </div>
-        <div
-          class="relative mt-11 md:mt-[133px] xl:mt-0 w-full h-[411px] max-w-[357px] md:max-w-[582px] xl:max-w-[671px] max-h-[411px] xl:h-[598px] xl:left-[118px]"
-        >
-          <img
-            class="absolute w-[168px] md:w-[225px] h-[352px] md:h-[478px] top-[57px] md:top-[25px] xl:top-[70px] -left-[10px] md:left-[52px] xl:-left-[60px] z-10"
-            src="/src/assets/img/mockup-01.svg"
-            alt=""
-            data-aos="fade-up"
-          />
-          <img
-            class="absolute w-[168px] md:w-[225px] h-[357px] md:h-[478px] top-0 md:-top-[51px] xl:-top-0 -right-[10px] md:right-[51px] xl:right-[253px] z-10"
-            src="/src/assets/img/mockup-02.png"
-            alt=""
-            data-aos="fade-down"
-          />
-          <img
-            class="invisible xl:visible absolute w-[323px] md:w-[582px] xl:w-[510px] top-[146px] md:top-0 xl:right-0 xl:top-[123px]"
-            src="/src/assets/img/circle-conta-digital.svg"
-            alt=""
-            data-aos="zoom-in"
-          />
-          <img
-            class="absolute xl:invisible w-[323px] md:w-[582px] xl:w-[510px] top-[146px] md:top-0 right-0"
-            src="/src/assets/img/circle-conta-digital-mobile.svg"
-            alt=""
-            data-aos="zoom-in"
-          />
         </div>
       </div>
-    </section>
-
-    <footer class="bg-brand-blue pt-12 md:pt-9">
-      <div class="container mx-auto max-md:max-w-full max-w-[1214px] px-5">
-        <div
-          class="flex flex-col md:flex-row items-center md:justify-between pb-11 xl:pb-12 mb-14 border-solid border-2 border-[#49C5FD]/20 border-r-0 border-t-0 border-l-0"
-        >
-          <img
-            class="max-w-[108px] md:max-w-[131px] mb-8 md:mb-0"
-            src="/src/assets/img/logo.svg"
-            alt=""
-          />
-          <div class="flex flex-col md:flex-row items-center gap-8">
-            <span
-              class="text-white text-sm leading-[125%] text-right opacity-70"
-              >Acompanhe nas redes</span
-            >
-            <ul class="flex items-center justify-center gap-8">
-              <li>
-                <a href=""
-                  ><img
-                    class="w-5 h-5"
-                    src="/src/assets/img/youtube.svg"
-                    alt=""
-                /></a>
+      <div
+        class="relative flex flex-col xl:flex-row items-start justify-between border-solid border-2 border-[#49C5FD]/20 border-r-0 border-t-0 border-l-0 pb-[50px] mb-[50px] xl:mb-10">
+        <nav class="w-full max-w-[860px] gap-10 grid grid-cols-2 md:grid-cols-3 xl:flex items-start justify-between">
+          <div>
+            <strong
+              class="font-poppins font-semibold text-lg xl:text-base leading-[125%] text-white mb-2 xl:mb-6 block">Produtos
+              Neon</strong>
+            <ul>
+              <li class="mb-1 xl:mb-3">
+                <a class="text-base xl:text-sm leading-7 text-white/70 hover:text-brand-yellow transition-all duration-300"
+                  href="">Cartão de crédito</a>
               </li>
-              <li>
-                <a href=""
-                  ><img
-                    class="w-5 h-5"
-                    src="/src/assets/img/linkedin.svg"
-                    alt=""
-                /></a>
+            </ul>
+            <ul>
+              <li class="mb-1 xl:mb-3">
+                <a class="text-base xl:text-sm leading-7 text-white/70 hover:text-brand-yellow transition-all duration-300"
+                  href="">Cartão pré-pago</a>
               </li>
-              <li>
-                <a href=""
-                  ><img
-                    class="w-5 h-5"
-                    src="/src/assets/img/facebook.svg"
-                    alt=""
-                /></a>
+            </ul>
+            <ul>
+              <li class="mb-1 xl:mb-3">
+                <a class="text-base xl:text-sm leading-7 text-white/70 hover:text-brand-yellow transition-all duration-300"
+                  href="">Neon Mais</a>
               </li>
-              <li>
-                <a href=""
-                  ><img
-                    class="w-5 h-5"
-                    src="/src/assets/img/instagram.svg"
-                    alt=""
-                /></a>
+            </ul>
+            <ul>
+              <li class="mb-1 xl:mb-3">
+                <a class="text-base xl:text-sm leading-7 text-white/70 hover:text-brand-yellow transition-all duration-300"
+                  href="">Investimentos</a>
+              </li>
+            </ul>
+            <ul>
+              <li class="mb-1 xl:mb-3">
+                <a class="text-base xl:text-sm leading-7 text-white/70 hover:text-brand-yellow transition-all duration-300"
+                  href="">Empréstimos</a>
               </li>
             </ul>
           </div>
-        </div>
-        <div
-          class="relative flex flex-col xl:flex-row items-start justify-between border-solid border-2 border-[#49C5FD]/20 border-r-0 border-t-0 border-l-0 pb-[50px] mb-[50px] xl:mb-10"
-        >
-          <nav
-            class="w-full max-w-[860px] gap-10 grid grid-cols-2 md:grid-cols-3 xl:flex items-start justify-between"
-          >
-            <div>
-              <strong
-                class="font-poppins font-semibold text-lg xl:text-base leading-[125%] text-white mb-2 xl:mb-6 block"
-                >Produtos Neon</strong
-              >
-              <ul>
-                <li class="mb-1 xl:mb-3">
-                  <a
-                    class="text-base xl:text-sm leading-7 text-white/70 hover:text-brand-yellow transition-all duration-300"
-                    href=""
-                    >Cartão de crédito</a
-                  >
-                </li>
-              </ul>
-              <ul>
-                <li class="mb-1 xl:mb-3">
-                  <a
-                    class="text-base xl:text-sm leading-7 text-white/70 hover:text-brand-yellow transition-all duration-300"
-                    href=""
-                    >Cartão pré-pago</a
-                  >
-                </li>
-              </ul>
-              <ul>
-                <li class="mb-1 xl:mb-3">
-                  <a
-                    class="text-base xl:text-sm leading-7 text-white/70 hover:text-brand-yellow transition-all duration-300"
-                    href=""
-                    >Neon Mais</a
-                  >
-                </li>
-              </ul>
-              <ul>
-                <li class="mb-1 xl:mb-3">
-                  <a
-                    class="text-base xl:text-sm leading-7 text-white/70 hover:text-brand-yellow transition-all duration-300"
-                    href=""
-                    >Investimentos</a
-                  >
-                </li>
-              </ul>
-              <ul>
-                <li class="mb-1 xl:mb-3">
-                  <a
-                    class="text-base xl:text-sm leading-7 text-white/70 hover:text-brand-yellow transition-all duration-300"
-                    href=""
-                    >Empréstimos</a
-                  >
-                </li>
-              </ul>
-            </div>
-            <div>
-              <strong
-                class="font-poppins font-semibold text-lg xl:text-base leading-[125%] text-white mb-2 xl:mb-6 block"
-                >Conta digital PJ</strong
-              >
-              <ul>
-                <li class="mb-1 xl:mb-3">
-                  <a
-                    class="text-base xl:text-sm leading-7 text-white/70 hover:text-brand-yellow transition-all duration-300"
-                    href=""
-                    >Sou MEI</a
-                  >
-                </li>
-              </ul>
-              <ul>
-                <li class="mb-1 xl:mb-3">
-                  <a
-                    class="text-base xl:text-sm leading-7 text-white/70 hover:text-brand-yellow transition-all duration-300"
-                    href=""
-                    >Sou ME</a
-                  >
-                </li>
-              </ul>
-            </div>
-            <div>
-              <strong
-                class="font-poppins font-semibold text-lg xl:text-base leading-[125%] text-white mb-2 xl:mb-6 block"
-                >Blog</strong
-              >
-              <ul>
-                <li class="mb-1 xl:mb-3">
-                  <a
-                    class="text-base xl:text-sm leading-7 text-white/70 hover:text-brand-yellow transition-all duration-300"
-                    href=""
-                    >#focanodinheiro</a
-                  >
-                </li>
-              </ul>
-              <ul>
-                <li class="mb-1 xl:mb-3">
-                  <a
-                    class="text-base xl:text-sm leading-7 text-white/70 hover:text-brand-yellow transition-all duration-300"
-                    href=""
-                    >O poder da comunidade</a
-                  >
-                </li>
-              </ul>
-              <ul>
-                <li class="mb-1 xl:mb-3">
-                  <a
-                    class="text-base xl:text-sm leading-7 text-white/70 hover:text-brand-yellow transition-all duration-300"
-                    href=""
-                    >Desafio das 52 semanas</a
-                  >
-                </li>
-              </ul>
-              <ul>
-                <li class="mb-1 xl:mb-3">
-                  <a
-                    class="text-base xl:text-sm leading-7 text-white/70 hover:text-brand-yellow transition-all duration-300"
-                    href=""
-                    >Planilha de gastos</a
-                  >
-                </li>
-              </ul>
-            </div>
-            <div>
-              <strong
-                class="font-poppins font-semibold text-lg xl:text-base leading-[125%] text-white mb-2 xl:mb-6 block"
-                >Institucional</strong
-              >
-              <ul>
-                <li class="mb-1 xl:mb-3">
-                  <a
-                    class="text-base xl:text-sm leading-7 text-white/70 hover:text-brand-yellow transition-all duration-300"
-                    href=""
-                    >Conheça a Neon</a
-                  >
-                </li>
-              </ul>
-              <ul>
-                <li class="mb-1 xl:mb-3">
-                  <a
-                    class="text-base xl:text-sm leading-7 text-white/70 hover:text-brand-yellow transition-all duration-300"
-                    href=""
-                    >Trabalhe conosco</a
-                  >
-                </li>
-              </ul>
-              <ul>
-                <li class="mb-1 xl:mb-3">
-                  <a
-                    class="text-base xl:text-sm leading-7 text-white/70 hover:text-brand-yellow transition-all duration-300"
-                    href=""
-                    >Termos de uso</a
-                  >
-                </li>
-              </ul>
-              <ul>
-                <li class="mb-1 xl:mb-3">
-                  <a
-                    class="text-base xl:text-sm leading-7 text-white/70 hover:text-brand-yellow transition-all duration-300"
-                    href=""
-                    >Políticas de privacidade</a
-                  >
-                </li>
-              </ul>
-            </div>
-            <div>
-              <strong
-                class="font-poppins font-semibold text-lg xl:text-base leading-[125%] text-white mb-2 xl:mb-6 block"
-                >Ajuda</strong
-              >
-              <ul>
-                <li class="mb-1 xl:mb-3">
-                  <a
-                    class="text-base xl:text-sm leading-7 text-white/70 hover:text-brand-yellow transition-all duration-300"
-                    href=""
-                    >Ouvidoria</a
-                  >
-                </li>
-              </ul>
-              <ul>
-                <li class="mb-1 xl:mb-3">
-                  <a
-                    class="text-base xl:text-sm leading-7 text-white/70 hover:text-brand-yellow transition-all duration-300"
-                    href=""
-                    >Fale conosco</a
-                  >
-                </li>
-              </ul>
-            </div>
-          </nav>
-          <div
-            class="mt-10 md:mt-0 md:absolute xl:relative md:bottom-10 xl:bottom-0 md:right-0 w-full md:w-[40%] xl:w-[280px]"
-          >
-            <button
-              class="flex items-center pl-6 mb-6 bg-[#00A5F0]/20 w-full h-[76px] rounded-md"
-            >
-              <img src="/src/assets/img/envelope.svg" alt="" />
-              <div class="ml-6">
-                <strong
-                  class="block text-left font-bold text-base xl:text-sm leading-[150%] text-white"
-                  >Atendimento</strong
-                >
-                <span
-                  class="block text-base xl:text-sm text-white/70 leading-[150%]"
-                  >oi@neon.com.br (24 horas)</span
-                >
-              </div>
-            </button>
-            <button
-              class="flex items-center pl-6 xl:mb-6 bg-[#00A5F0]/20 w-full h-[76px] rounded-md"
-            >
-              <img src="/src/assets/img/chat.svg" alt="" />
-              <div class="ml-6">
-                <strong
-                  class="block text-left font-bold text-base xl:text-sm leading-[150%] text-white"
-                  >Imprensa:</strong
-                >
-                <span
-                  class="block text-base xl:text-sm text-white/70 leading-[150%]"
-                  >imprensa@neon.com.br</span
-                >
-              </div>
-            </button>
+          <div>
+            <strong
+              class="font-poppins font-semibold text-lg xl:text-base leading-[125%] text-white mb-2 xl:mb-6 block">Conta
+              digital PJ</strong>
+            <ul>
+              <li class="mb-1 xl:mb-3">
+                <a class="text-base xl:text-sm leading-7 text-white/70 hover:text-brand-yellow transition-all duration-300"
+                  href="">Sou MEI</a>
+              </li>
+            </ul>
+            <ul>
+              <li class="mb-1 xl:mb-3">
+                <a class="text-base xl:text-sm leading-7 text-white/70 hover:text-brand-yellow transition-all duration-300"
+                  href="">Sou ME</a>
+              </li>
+            </ul>
           </div>
-        </div>
+          <div>
+            <strong
+              class="font-poppins font-semibold text-lg xl:text-base leading-[125%] text-white mb-2 xl:mb-6 block">Blog</strong>
+            <ul>
+              <li class="mb-1 xl:mb-3">
+                <a class="text-base xl:text-sm leading-7 text-white/70 hover:text-brand-yellow transition-all duration-300"
+                  href="">#focanodinheiro</a>
+              </li>
+            </ul>
+            <ul>
+              <li class="mb-1 xl:mb-3">
+                <a class="text-base xl:text-sm leading-7 text-white/70 hover:text-brand-yellow transition-all duration-300"
+                  href="">O poder da comunidade</a>
+              </li>
+            </ul>
+            <ul>
+              <li class="mb-1 xl:mb-3">
+                <a class="text-base xl:text-sm leading-7 text-white/70 hover:text-brand-yellow transition-all duration-300"
+                  href="">Desafio das 52 semanas</a>
+              </li>
+            </ul>
+            <ul>
+              <li class="mb-1 xl:mb-3">
+                <a class="text-base xl:text-sm leading-7 text-white/70 hover:text-brand-yellow transition-all duration-300"
+                  href="">Planilha de gastos</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <strong
+              class="font-poppins font-semibold text-lg xl:text-base leading-[125%] text-white mb-2 xl:mb-6 block">Institucional</strong>
+            <ul>
+              <li class="mb-1 xl:mb-3">
+                <a class="text-base xl:text-sm leading-7 text-white/70 hover:text-brand-yellow transition-all duration-300"
+                  href="">Conheça a Neon</a>
+              </li>
+            </ul>
+            <ul>
+              <li class="mb-1 xl:mb-3">
+                <a class="text-base xl:text-sm leading-7 text-white/70 hover:text-brand-yellow transition-all duration-300"
+                  href="">Trabalhe conosco</a>
+              </li>
+            </ul>
+            <ul>
+              <li class="mb-1 xl:mb-3">
+                <a class="text-base xl:text-sm leading-7 text-white/70 hover:text-brand-yellow transition-all duration-300"
+                  href="">Termos de uso</a>
+              </li>
+            </ul>
+            <ul>
+              <li class="mb-1 xl:mb-3">
+                <a class="text-base xl:text-sm leading-7 text-white/70 hover:text-brand-yellow transition-all duration-300"
+                  href="">Políticas de privacidade</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <strong
+              class="font-poppins font-semibold text-lg xl:text-base leading-[125%] text-white mb-2 xl:mb-6 block">Ajuda</strong>
+            <ul>
+              <li class="mb-1 xl:mb-3">
+                <a class="text-base xl:text-sm leading-7 text-white/70 hover:text-brand-yellow transition-all duration-300"
+                  href="">Ouvidoria</a>
+              </li>
+            </ul>
+            <ul>
+              <li class="mb-1 xl:mb-3">
+                <a class="text-base xl:text-sm leading-7 text-white/70 hover:text-brand-yellow transition-all duration-300"
+                  href="">Fale conosco</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
         <div
-          class="flex flex-col xl:flex-row items-center xl:items-center xl:justify-center border-solid border-4 border-brand-yellow border-r-0 border-t-0 border-l-0 pb-9 relative"
-        >
-          <div class="text-xl mb-4">😀</div>
-          <p
-            class="w-full max-w-[300px] md:max-w-[660px] xl:max-w-[660px] text-center xl:ml-6 text-md leading-[150%] text-white opacity-80 mb-4"
-          >
-            Oi! Leu até aqui? Você se preocupa com os mínimos detalhes, mesmo. A
-            gente também. Por isso o time Neon está sempre trabalhando para
-            fazer a conta digital perfeita para você ;)
-          </p>
-          <p
-            class="absolute w-full max-w-[660px] text-sm leading-[150%] text-white/70 text-center bottom-0 mb-4"
-          >
-            Made with <span class="text-white">💙</span> by
-            <a
-              class="hover:text-brand-yellow opacity-100"
-              href="https://github.com/zmatezz"
-              target="_blank"
-              >zmatez</a
-            >
-          </p>
+          class="mt-10 md:mt-0 md:absolute xl:relative md:bottom-10 xl:bottom-0 md:right-0 w-full md:w-[40%] xl:w-[280px]">
+          <button class="flex items-center pl-6 mb-6 bg-[#00A5F0]/20 w-full h-[76px] rounded-md">
+            <img src="/src/assets/img/envelope.svg" alt="" />
+            <div class="ml-6">
+              <strong
+                class="block text-left font-bold text-base xl:text-sm leading-[150%] text-white">Atendimento</strong>
+              <span class="block text-base xl:text-sm text-white/70 leading-[150%]">oi@neon.com.br (24 horas)</span>
+            </div>
+          </button>
+          <button class="flex items-center pl-6 xl:mb-6 bg-[#00A5F0]/20 w-full h-[76px] rounded-md">
+            <img src="/src/assets/img/chat.svg" alt="" />
+            <div class="ml-6">
+              <strong
+                class="block text-left font-bold text-base xl:text-sm leading-[150%] text-white">Imprensa:</strong>
+              <span class="block text-base xl:text-sm text-white/70 leading-[150%]">imprensa@neon.com.br</span>
+            </div>
+          </button>
         </div>
       </div>
-    </footer>
+      <div
+        class="flex flex-col xl:flex-row items-center xl:items-center xl:justify-center border-solid border-4 border-brand-yellow border-r-0 border-t-0 border-l-0 pb-9 relative">
+        <div class="text-xl mb-4">😀</div>
+        <p
+          class="w-full max-w-[300px] md:max-w-[660px] xl:max-w-[660px] text-center xl:ml-6 text-md leading-[150%] text-white opacity-80 mb-4">
+          Oi! Leu até aqui? Você se preocupa com os mínimos detalhes, mesmo. A
+          gente também. Por isso o time Neon está sempre trabalhando para
+          fazer a conta digital perfeita para você ;)
+        </p>
+        <p class="absolute w-full max-w-[660px] text-sm leading-[150%] text-white/70 text-center bottom-0 mb-4">
+          Made with <span class="text-white">💙</span> by
+          <a class="hover:text-brand-yellow opacity-100" href="https://github.com/zmatezz" target="_blank">zmatez</a>
+        </p>
+      </div>
+    </div>
+  </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="./src/assets/js/index.js"></script>
-  </body>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="./src/assets/js/index.js"></script>
+</body>
+
 </html>

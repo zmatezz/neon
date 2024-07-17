@@ -38,6 +38,17 @@ module.exports = {
       content: {
         point: 'url("/src/assets/img/points.svg")',
       },
+      animation: {
+        floating: "floating 6s ease-in-out infinite",
+        floatingslow: "floating 8s ease-in-out infinite",
+      },
+      keyframes: {
+        floating: {
+          "0%": { transform: "translateY(0)" },
+          "66%": { transform: "translateY(-15px)" },
+          "100%": { transform: "translateY(0)" },
+        },
+      },
     },
   },
   plugins: [],
